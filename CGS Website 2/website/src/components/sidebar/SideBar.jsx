@@ -8,8 +8,11 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-content">
-        <h2 className="sidebar-title">Explore</h2>
+        <h2 className="sidebar-title">C G S</h2>
         <ul className="sidebar-menu">
+        <li onClick={() => navigate('/')} className="sidebar-item">
+            Home
+          </li>
           <li onClick={() => navigate('/GameDev')} className="sidebar-item">
             Game Dev
           </li>

@@ -74,12 +74,13 @@ const Organisation = () => {
               Our expertise in graphics ensures high-quality visuals, from detailed environments to dynamic lighting and textures, enhancing player engagement and realism.Beyound this we create Animations , Short Films , ArtWork Music Visulalizer and many more.
               </p>
               <button
-  data-aos="fade-up"
-  data-aos-delay="500"
-  className="bg-gradient-to-r from-black to-blue-500 text-white px-10 py-2 rounded-md duration-200 border-1px-white hover:bg-blue-600 active:bg-white"
->
-  EXPLORE MORE..
-</button>
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                  className="bg-gradient-to-r from-black to-blue-500 text-white px-10 py-2 rounded-md duration-200 border-1px-white hover:bg-blue-600 active:bg-white"
+                  onClick={()=>{handleNavigation("Graphics")}}
+                >
+                  EXPLORE MORE..
+                </button>
 
 
             </div>

@@ -30,6 +30,7 @@ const Navbar = () => {
                   href="#"
                   className="font-montserrat leading-normal text-[17px] text-slate-gray text-white font-light transition-all duration-5000 ease-in-out hover:border-b hover:border-coral-red"
                   style={{ textDecoration: "none" }}
+                  onClick={()=>{handleNavigation("Team")}}
                   
                 >
                   About Teams

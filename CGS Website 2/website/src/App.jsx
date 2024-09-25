@@ -10,6 +10,11 @@ import Footer5 from "./components/Footer/Footer5.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GameDev from "./components/Game Page/GameDev.jsx";
+import Graphics from "./components/Graphics/Graphics.jsx";
+import Team from "./components/Team/team.jsx";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => {
   React.useEffect(() => {
@@ -32,7 +37,9 @@ const App = () => {
                   <video
                     autoPlay
                     loop
-                    className="fixed right-0 top-0 h-[700px] w-full object-cover z-[-1]"
+                    muted
+                    class="fixed right-0 top-0 h-full w-full object-cover z-[-1]"
+
                   >
                     <source src={BgVideo} type="video/mp4" />
                   </video>
@@ -50,7 +57,14 @@ const App = () => {
           />
 
           {/* GameDev Page Route */}
-          <Route path="/GameDev" element={<><Navbar/> <GameDev /></>} />
+          <Route path="/GameDev" element={<><Navbar/>  <GameDev />
+             </>} />
+           {/* Graphics Page Route */}
+                    <Route path="/Graphics" element={<><Navbar/>  <Graphics />
+             </>} />   
+
+          <Route path="/Team" element={<><Team/>
+              </>} />
         </Routes>
       </div>
     </Router>
