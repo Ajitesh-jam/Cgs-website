@@ -10,7 +10,7 @@
 .carousel-image {
     
     width: 90%; /* Leave 10% for sidebar */
-    height: 60vh; /* Set height to 60% of viewport */
+    height: 100%; /* Set height to 60% of viewport */
     background-size: cover; /* Ensure the image covers the entire div */
     background-position: center; /* Center the image */
     margin-left: 10%; /* Leave 10% space on the left for sidebar interaction */

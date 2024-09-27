@@ -20,7 +20,7 @@ const Team = () => {
       }, []);
 
   const governors = [
-    { id: 1, name: 'Upanshu ', position: '', image: upanshu, socials: [ 'linkdin', 'google-plus'] ,socialLinks:['https://www.linkedin.com/in/upanshu-jain-601b28276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app','mailto:upanshujpanchori16@gmail.com']},
+    { id: 1, name: 'Upanshu Bhosidiwaala', position: 'Society ka Chutiya ', image: upanshu, socials: [ 'linkdin', 'google-plus'] ,socialLinks:['https://www.linkedin.com/in/upanshu-jain-601b28276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app','mailto:upanshujpanchori16@gmail.com']},
     { id: 2, name: 'Vedanta Hazra', position: 'RnD Head', image: vedant, socials: [ 'linkdin', 'google-plus'] },
     { id: 3, name: 'John Doe', position: 'Project Manager', image: upanshu, socials: [ 'linkdin', 'google-plus'] },
     { id: 4, name: 'Jane Smith', position: 'Graphic Designer', image: upanshu, socials: [ 'linkdin', 'google-plus'] },
@@ -28,7 +28,7 @@ const Team = () => {
   ];
 
   const advisors = [
-    { id: 1, name: 'Ojas Deshmukh', position: '', image: ojas, socials: [ 'linkdin', 'google-plus'] },
+    { id: 1, name: 'Ojas Deshmukh', position: 'Fundebaaz', image: ojas, socials: [ 'linkdin', 'google-plus'] },
     { id: 2, name: 'Bob White', position: 'Strategy Advisor', image: ojas, socials: [ 'linkdin', 'google-plus'] },
     { id: 3, name: 'Charlie Black', position: 'Business Advisor', image: ojas, socials: [ 'linkdin', 'google-plus'] },
     { id: 4, name: 'Diana Blue', position: 'Technical Advisor', image: ojas, socials: [ 'linkdin', 'google-plus'] }
