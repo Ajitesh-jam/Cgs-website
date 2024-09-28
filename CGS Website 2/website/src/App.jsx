@@ -33,29 +33,14 @@ const App = () => {
             path="/"
             element={
               <div>
-                <div className="h-[700px] relative">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    class="fixed right-0 top-0 h-full w-full object-cover z-[-1]"
-
-                  >
-                    <source src={BgVideo} type="video/mp4" />
-                  </video>
                   <Navbar />
                   <Hero />
-                </div>
                 <HeroCard />
                 <Organisation />
                 <Satelite />
-                
-                {/* Optionally include Footer */}
-                {/* <Footer5 /> */}
               </div>
             }
           />
-
           {/* GameDev Page Route */}
           <Route path="/GameDev" element={<><Navbar/>  <GameDev />
              </>} />
