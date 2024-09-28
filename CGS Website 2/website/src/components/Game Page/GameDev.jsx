@@ -237,7 +237,7 @@ const GameDev = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1300,
+      duration: 700,
       easing: 'ease-in-out',
     });
 
