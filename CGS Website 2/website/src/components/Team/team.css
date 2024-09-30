@@ -172,7 +172,7 @@
     gap: 4rem;
     justify-content: space-around;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
 .col-lg-3 {
