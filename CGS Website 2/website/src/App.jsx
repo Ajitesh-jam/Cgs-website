@@ -45,11 +45,11 @@ const App = () => {
                   </video>
                   <Navbar />
                   <Hero />
-                </div>
+                
                 <HeroCard />
                 <Organisation />
                 <Satelite />
-                
+                </div>
                 {/* Optionally include Footer */}
                 {/* <Footer5 /> */}
               </div>
@@ -63,7 +63,7 @@ const App = () => {
                     <Route path="/Graphics" element={<><Navbar/>  <Graphics />
              </>} />   
 
-          <Route path="/Team" element={<><Team/>
+          <Route path="/Team" element={<><Navbar/><Team/>
               </>} />
         </Routes>
       </div>

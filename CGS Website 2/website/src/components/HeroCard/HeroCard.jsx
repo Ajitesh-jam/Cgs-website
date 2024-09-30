@@ -40,6 +40,7 @@ const HeroCard = () => {
                     <div
                       key={index}
                       data-aos="fade-up"
+                      data-aos-once='true'
                       data-aos-delay={data.aosDelay}
                       className="min-h-[180px] flex flex-col justify-center items-center rounded-xl space-y-3 p-4 border-white space-y-3 xl:pr-3 p-4 border-r-2 border-b-4 border-r-white border-b-white"
                     >

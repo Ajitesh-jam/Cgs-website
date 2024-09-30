@@ -16,31 +16,34 @@ const Organisation = () => {
 
   return (
     <>
+    <div className="m-1 p-3">
       <section className="bg text-white pb-12 font-roboto m-1" id="organisation" >
         <div className="container ">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <div data-aos="zoom-in">
+            <div data-aos="zoom-in" data-aos-once='true'>
               <img
                 src={sateliteImg}
                 alt=""
-                className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover rounded-xl space-y-3 p-4 border-white space-y-3 xl:pr-3 p-4 border-r-2 border-b-4 border-r-white border-b-white"
+                className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover rounded-xl p-4 border-white space-y-3 xl:pr-3 p-4 border-r-2 border-b-4 border-r-white border-b-white"
               />
             </div>
-            <div className="bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-sky-800 border-b-sky-800 rounded-2xl ">
+            <div className="bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-pink-500 border-b-pink-500 rounded-2xl aspect-video">
               <h1
                 data-aos="fade-up"
                 data-aos-delay="500"
-                className="uppercase text-5xl"
+                data-aos-once='true'
+                className="uppercase text-5xl text-pink-500"
               >
                 GAME DEVELOPMENT 
               </h1>
-              <p data-aos="fade-up" data-aos-delay="700">
+              <p className="text-lg m-1" data-aos="fade-up" data-aos-once='true' data-aos-delay="700">
               We specialize in crafting engaging and interactive games using Unity, delivering dynamic gameplay experiences with an emphasis on smooth mechanics, intuitive controls, and immersive storytelling. Our approach combines innovation with technical precision to create games that captivate and challenge players.
               </p>
               <button
                       data-aos="fade-up"
                       data-aos-delay="500"
-                      className="bg-gradient-to-r from-black to-blue-500 text-white px-10 py-2 rounded-md duration-200 border-1px-white hover:bg-blue-600 active:bg-white"
+                      data-aos-once='true'
+                      className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-8 py-2 rounded-md hover:bg-pink-600 transition duration-300 m-1"
 
                       onClick={()=>{handleNavigation("GameDev")}}
                     >
@@ -54,29 +57,31 @@ const Organisation = () => {
       <section className="bg text-white pb-12">
         <div className="container ">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <div data-aos="zoom-in">
+            <div data-aos="zoom-in" data-aos-once='true'>
               <img
                 src={sateliteImg1}
                 alt=""
                 className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover rounded-xl space-y-3 p-4 border-white space-y-3 xl:pr-3 p-4 border-r-2 border-b-4 border-r-white border-b-white"
               />
             </div>
-            <div className="bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-sky-800 border-b-sky-800 rounded-2xl ">
+            <div className="bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-pink-500 border-b-pink-500 rounded-2xl aspect-video ">
               
               <h1
                 data-aos="fade-up"
                 data-aos-delay="500"
-                className="uppercase text-5xl"
+                data-aos-once='true'
+                className="uppercase text-5xl text-pink-500"
               >
                 GRAPHICS
               </h1>
-              <p data-aos="fade-up" data-aos-delay="700">
+              <p className="text-lg m-1" data-aos="fade-up" data-aos-once='true' data-aos-delay="700">
               Our expertise in graphics ensures high-quality visuals, from detailed environments to dynamic lighting and textures, enhancing player engagement and realism.Beyound this we create Animations , Short Films , ArtWork Music Visulalizer and many more.
               </p>
               <button
                   data-aos="fade-up"
                   data-aos-delay="500"
-                  className="bg-gradient-to-r from-black to-blue-500 text-white px-10 py-2 rounded-md duration-200 border-1px-white hover:bg-blue-600 active:bg-white"
+                  data-aos-once='true'
+                  className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-8 py-2 rounded-md hover:bg-pink-600 transition duration-300 m-1"
                   onClick={()=>{handleNavigation("Graphics")}}
                 >
                   EXPLORE MORE..
@@ -90,29 +95,31 @@ const Organisation = () => {
       <section className="bg text-white pb-12">
         <div className="container ">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <div data-aos="zoom-in">
+            <div data-aos="zoom-in" data-aos-once='true'>
               <img
                 src={sateliteImg2}
                 alt=""
                 className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover rounded-xl space-y-3 p-4 border-white space-y-3 xl:pr-3 p-4 border-r-2 border-b-4 border-r-white border-b-white"
               />
             </div>
-            <div className="bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-sky-800 border-b-sky-800 rounded-2xl">
+            <div className="bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-pink-500 border-b-pink-500 rounded-2xl aspect-video">
               
               <h1
                 data-aos="fade-up"
                 data-aos-delay="500"
-                className="uppercase text-5xl"
+                data-aos-once='true'
+                className="uppercase text-5xl text-pink-500"
               >
                 RESEARCH AND DEVELOPMENT
               </h1>
-              <p data-aos="fade-up" data-aos-delay="700">
+              <p className="text-lg m-1" data-aos="fade-up" data-aos-once='true' data-aos-delay="700">
               We focus on the frontier of <b>Virtual Reality and Augmented Reality </b>game technology, conducting research in shaders, AI, and machine learning. Our work with OpenCV in Unity enables intelligent object recognition and interaction, while our shader development enhances real-time rendering. This R&D allows us to pioneer innovative visual effects and AI-driven gameplay mechanics
               </p>
               <button
   data-aos="fade-up"
   data-aos-delay="500"
-  className="bg-gradient-to-r from-black to-blue-500 text-white px-10 py-2 rounded-md duration-200 border-1px-white hover:bg-blue-600 active:bg-white"
+  data-aos-once='true'
+  className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-8 py-2 rounded-md hover:bg-pink-600 transition duration-300 m-1"
 >
   EXPLORE MORE..
 </button>
@@ -122,6 +129,7 @@ const Organisation = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };
