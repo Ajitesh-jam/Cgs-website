@@ -31,6 +31,7 @@ const Team = () => {
     { id: 1, name: 'Ojas Deshmukh', position: '', image: ojas, socials: [ 'linkdin', 'google-plus'] },
     { id: 2, name: 'Bob White', position: 'Strategy Advisor', image: ojas, socials: [ 'linkdin', 'google-plus'] },
     { id: 3, name: 'Charlie Black', position: 'Business Advisor', image: ojas, socials: [ 'linkdin', 'google-plus'] },
+    { id: 4, name: 'Diana Blue', position: 'Technical Advisor', image: ojas, socials: [ 'linkdin', 'google-plus'] },
     { id: 4, name: 'Diana Blue', position: 'Technical Advisor', image: ojas, socials: [ 'linkdin', 'google-plus'] }
   ];
 
@@ -71,9 +72,9 @@ const Team = () => {
       {/* Current Governors Section */}
       <div className="container">
         <h2 className='headi'>Current Governors</h2>
-        <div className="row">
+        <div className="members">
           {governors.map((member) => (
-            <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
+            <div className="" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
               <div className="our-team">
                 <img src={member.image} alt={member.name}/>
                 <div className="team-content" >
@@ -98,10 +99,10 @@ const Team = () => {
       {/* Advisors Section */}
       <div className="container">
         <h2 className='headi'>Advisors</h2>
-        <div className="row">
+        <div className="members">
           {advisors.map((member) => (
-            <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
-              <div className="our-team">
+            <div className="" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
+              <div className="our-team ">
                 <img src={member.image} alt={member.name} />
                 <div className="team-content">
                   <h3 className="title">{member.name}</h3>
