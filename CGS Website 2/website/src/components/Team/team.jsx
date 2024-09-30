@@ -43,33 +43,39 @@ const Team = () => {
     }
   };
 
-  return (<>
-
-    <SideBar></SideBar>
-    <div className="carousel">
+  return (
+  <>
+     {/* <div className="carousel">
       <div
         className="carousel-image"
-        style={{ backgroundImage: `url(${team})`, marginLeft: "10%" }}
+        style={{ backgroundImage: `url(${team})`}}
       >
         <div className="carousel-overlay">
           <h1><b>COMPUTER GRAPHICS SOCIETY</b></h1>
         </div>
       </div>
+     </div> */}
+     <div className="relative w-full h-[60vh] overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${team})` }}
+        >
+          <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
+            <h1 className="text-5xl font-bold text-white drop-shadow-lg"><b>COMPUTER GRAPHICS SOCIETY</b></h1>
+          </div>
+        </div>
     </div>
 
 
-    <div className="demo">
-        
-       
-        
+     <div className="demo">
       {/* Current Governors Section */}
       <div className="container">
-        <h2 >Current Governors</h2>
+        <h2 className='headi'>Current Governors</h2>
         <div className="row">
           {governors.map((member) => (
             <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
-              <div className="our-team"  >
-                <img src={member.image} alt={member.name} />
+              <div className="our-team">
+                <img src={member.image} alt={member.name}/>
                 <div className="team-content" >
                   <h3 className="title">{member.name}</h3>
                   <span className="post">{member.position}</span>
@@ -91,7 +97,7 @@ const Team = () => {
 
       {/* Advisors Section */}
       <div className="container">
-        <h2>Advisors</h2>
+        <h2 className='headi'>Advisors</h2>
         <div className="row">
           {advisors.map((member) => (
             <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
@@ -115,7 +121,8 @@ const Team = () => {
           ))}
         </div>
       </div>
-    </div></>
+    </div>
+    </>
   );
 };
 

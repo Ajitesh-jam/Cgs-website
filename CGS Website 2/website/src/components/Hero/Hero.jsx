@@ -37,7 +37,7 @@ import './Hero.css'
 // export default Hero;
 export default function Hero() {
   return (
-    <section className="bg-black text-white py-20">
+    <section className="bg-black/80 text-white py-20 pb-20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
         {/* Image Section */}
         <div className="md:w-1/2">

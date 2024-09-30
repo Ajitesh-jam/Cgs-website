@@ -29,7 +29,8 @@ const ServiceData = [
 const HeroCard = () => {
   return (
     <>
-      <section className="bg-black pb-7" id="services">
+    <div className="bg-black pt-0.5">
+      <section className="bg-black pt-7" id="services">
         <div className="container">
           <div className="min-h-[400px]">
             <div>
@@ -55,6 +56,7 @@ const HeroCard = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };

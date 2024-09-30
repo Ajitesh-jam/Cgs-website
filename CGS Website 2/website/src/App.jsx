@@ -33,6 +33,12 @@ const App = () => {
             path="/"
             element={
               <div>
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    class="fixed right-0 top-0 h-full w-full object-cover z-[-1]"
+                  ></video>
                   <Navbar />
                   <Hero />
                 <HeroCard />
@@ -42,13 +48,17 @@ const App = () => {
             }
           />
           {/* GameDev Page Route */}
-          <Route path="/GameDev" element={<><Navbar/>  <GameDev />
+          <Route path="/GameDev" element={<>
+           <Navbar/>  
+           <GameDev />
              </>} />
            {/* Graphics Page Route */}
                     <Route path="/Graphics" element={<><Navbar/>  <Graphics />
              </>} />   
 
-          <Route path="/Team" element={<><Team/>
+          <Route path="/Team" element={<>
+          <Navbar/>
+          <Team/>
               </>} />
         </Routes>
       </div>

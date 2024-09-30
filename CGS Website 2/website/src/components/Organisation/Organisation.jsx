@@ -144,6 +144,7 @@ const Organisation = () => {
 
   return (
     <>
+    <div className="m-1 p-20">
       {/* Game Development Section */}
       <section className="bg-white text-white p-12 font-roboto" id="organisation">
         <div className="container mx-auto px-6"> {/* Added padding */}
@@ -242,6 +243,7 @@ const Organisation = () => {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 };
