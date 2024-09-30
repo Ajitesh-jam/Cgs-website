@@ -27,38 +27,43 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Routes>
+      <Routes>
           {/* Home Page Route */}
           <Route
             path="/"
             element={
               <div>
-                <video
+                <div className="h-[700px] relative">
+                  <video
                     autoPlay
                     loop
                     muted
                     class="fixed right-0 top-0 h-full w-full object-cover z-[-1]"
-                  ></video>
+
+                  >
+                    <source src={BgVideo} type="video/mp4" />
+                  </video>
                   <Navbar />
                   <Hero />
+                </div>
                 <HeroCard />
                 <Organisation />
                 <Satelite />
+                
+                {/* Optionally include Footer */}
+                {/* <Footer5 /> */}
               </div>
             }
           />
+
           {/* GameDev Page Route */}
-          <Route path="/GameDev" element={<>
-           <Navbar/>  
-           <GameDev />
+          <Route path="/GameDev" element={<><Navbar/>  <GameDev />
              </>} />
            {/* Graphics Page Route */}
                     <Route path="/Graphics" element={<><Navbar/>  <Graphics />
              </>} />   
 
-          <Route path="/Team" element={<>
-          <Navbar/>
-          <Team/>
+          <Route path="/Team" element={<><Team/>
               </>} />
         </Routes>
       </div>
