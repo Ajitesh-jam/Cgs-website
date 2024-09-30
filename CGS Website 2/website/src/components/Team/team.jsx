@@ -1,12 +1,12 @@
 import React from 'react';
-import './Team.css'; // Optional: Use external CSS if needed
+import './team.css'; // Optional: Use external CSS if needed
 import upanshu from '../../assets/Team/upanshu.png';
 import vedant from '../../assets/Team/vedant.png';
 import ojas from '../../assets/Team/ojas.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFacebook,faLinkedin,faGithub, faInstagram, faGoogle} from "@fortawesome/free-brands-svg-icons"
 
-import SideBar from '../sideBar/SideBar';
+// import SideBar from '../sideBar/SideBar';
 import team from '../../assets/team.png';
 
 import AOS from "aos";
