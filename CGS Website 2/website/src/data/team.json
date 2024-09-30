@@ -1,0 +1,12 @@
+
+{
+    "governors" : {
+
+    { ""id"": 2, "name": 'Vedanta Hazra', position: 'RnD Head', "image": vedant, "socials": [ 'linkdin', 'google-plus'] },
+    { "id": 3, "name": 'John Doe', position: 'Project Manager', "image": upanshu, "socials": [ 'linkdin', 'google-plus'] },
+    { "id": 4, "name": 'Jane Smith', position: 'Graphic Designer', "image": upanshu, "socials": [ 'linkdin', 'google-plus'] },
+    { "id": 5, "name": 'Mark Brown', position: 'UX Designer', "image": upanshu, "socials": [ 'linkdin', 'google-plus'] }
+
+    }
+  
+}
