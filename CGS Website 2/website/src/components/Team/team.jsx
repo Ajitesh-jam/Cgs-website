@@ -10,12 +10,19 @@ import team from '../../assets/team.png';
 import AOS from "aos";
 
 const Team = () => {
-
+  const [members, setMembers] = React.useState([]);
+  
   React.useEffect(() => {
     AOS.init({
       duration: 1300,
       easing: "ease-in-out",
     });
+    async function fetchData() {
+      const data = await getContent('members');
+      setMembers(data);
+    }
+
+    fetchData();
   }, []);
 
   // Map the image paths to the members
@@ -107,8 +114,36 @@ const Team = () => {
           </div>
         </div>
       </div>
+
+       {/* Testing Section */}
+       <div className="container">
+        <h2 className='headi'>Testing</h2>
+        <div className="members">
+          {Array.isArray(members) && members?.map((member) => (
+            <div className="okay" key={member?.id} data-aos="fade-up"> {/* Adjusted columns */}
+              <div className="our-team ">
+                <img src={member?.fields.img.fields.file.url} alt={member?.fields.name} />
+                <div className="team-content">
+                  <h3 className="title">{member?.fields.name}</h3>
+                  <span className="post">{member?.fields.position}</span>
+                  <ul className="social">
+                    {Object.entries(member?.fields.socials).map((social, index) => (
+                      <li key={index}>
+                        <a href={social[1]?.link}>
+                        <FontAwesomeIcon icon={getSocialIcon(social[1]?.social)}></FontAwesomeIcon>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };
 
 export default Team;
+
