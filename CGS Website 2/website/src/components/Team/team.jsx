@@ -531,12 +531,12 @@ const Team = () => {
   const gameDev =[
     {
       id: 1,
-      name: "Harshwardhan Walunjkar",
+      name: "Himesh Kundal",
       position: "GameDev",
-      image: "https://drive.google.com/open?id=1HnH-qbJkJu5POytxkbi7zBsPkxI_LJFj",
+      image: "",
       socials: [
-        "https://www.linkedin.com/in/harshwardhan-walunjkar-93035628b/",
-        "mailto:harshwardhanwada@gmail.com"
+        "https://www.linkedin.com/in/himesh-kundal-140059287/",
+        "mailto:himesh.kundal@gmail.com"
       ]
     },
     {
@@ -607,6 +607,16 @@ const Team = () => {
       socials: [
         "www.linkedin.com/in/harsh-verma-572167287",
         "mailto:ayush2412200@gmail.com"
+      ]
+    },
+    {
+      id: 9,
+      name: "Harshwardhan Walunjkar",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1HnH-qbJkJu5POytxkbi7zBsPkxI_LJFj",
+      socials: [
+        "https://www.linkedin.com/in/harshwardhan-walunjkar-93035628b/",
+        "mailto:harshwardhanwada@gmail.com"
       ]
     }
   ]
