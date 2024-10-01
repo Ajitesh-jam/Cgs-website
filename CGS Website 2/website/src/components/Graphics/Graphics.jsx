@@ -41,7 +41,7 @@ const Graphics = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1300,
+      duration: 700,
       easing: "ease-in-out",
     });
 
@@ -87,18 +87,25 @@ const Graphics = () => {
 
   return (
     <div className="netflix-page">
-      <br></br>
-      <br></br>
-      <br></br>
 
       {/* Main Carousel Section */}
-      <div className="carousel">
+      {/* <div className="carousel">
         <div
           className="carousel-image"
           style={{ backgroundImage: `url(${carouselGraphicss[currentGraphics]})` }}
         >
           <div className="carousel-overlay">
             <h1>Graphics Development</h1>
+          </div>
+        </div>
+      </div> */}
+      <div className="relative w-full h-[60vh] overflow-hidden">
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: `url(${carouselGraphicss[currentGraphics]})` }}
+        >
+          <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
+            <h1 className="text-5xl font-bold text-white text-center drop-shadow-lg"><b>Graphics Development</b></h1>
           </div>
         </div>
       </div>

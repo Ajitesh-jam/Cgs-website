@@ -150,7 +150,7 @@ function Navbar() {
         <div className="hidden lg:flex space-x-8 text-lg text-white">
           <a href="#" className="hover:text-pink-500 " onClick={()=>{handleNavigation("Team")}}>Team</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
-          <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Graphics</a>
+          <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Research</a>
         </div>
       </div>
@@ -160,7 +160,7 @@ function Navbar() {
         <div className="space-y-4 py-2 px-4 text-white text-lg text-center">
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Team")}}>Team</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
-          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Graphics</a>
+          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Research</a>
         </div>
       </div>

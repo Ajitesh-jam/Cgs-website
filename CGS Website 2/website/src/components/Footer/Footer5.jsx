@@ -3,12 +3,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-dark">
       <section className="max-w-[1400px] mx-auto text-white">
         <div className="grid md:grid-cols-3 py-5">
           {/* first column */}
           <div className="py-8 px-4">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
+            <h1 className="sm:text-3xl text-xl text-pink-500 font-bold sm:text-left text-justify mb-3">
               Spacer
             </h1>
             <p className="text-gray-400">
@@ -19,11 +19,11 @@ const Footer = () => {
             <br />
             <div className="flex items-center h-10">
               <input
-                className="py-1 px-3 w-full h-[100%] inline-block focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 bg-gray-800 border-gray-200 border-2"
+                className="py-1 px-3 w-full h-[100%] inline-block focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-500 bg-gray-800 border-pink-500 border-2"
                 type="text"
                 placeholder="Email"
               />
-              <button className="bg-white hover:bg-white-200/75 h-full inline-block py-2 px-6 text-black">
+              <button className="bg-pink-500 hover:bg-white-200/75 h-full inline-block py-2 px-6 text-white">
                 Ok
               </button>
             </div>
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
             <div className="">
               <div className="py-8 px-4">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                <h1 className="sm:text-xl text-xl font-bold text-pink-500 sm:text-left text-justify mb-3">
                   Important Links
                 </h1>
                 <ul className={`flex flex-col gap-3 `}>
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
             <div className="">
               <div className="py-8 px-4">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                <h1 className="sm:text-xl text-xl font-bold text-pink-500 sm:text-left text-justify mb-3">
                   Links
                 </h1>
                 <ul className="flex flex-col gap-3 ">

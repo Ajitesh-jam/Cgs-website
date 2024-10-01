@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import GameDev from "./components/Game Page/GameDev.jsx";
 import Graphics from "./components/Graphics/Graphics.jsx";
 import Team from "./components/Team/team.jsx";
+import Footer from "./components/Footer/Footer5.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -49,6 +50,7 @@ const App = () => {
                 <HeroCard />
                 <Organisation />
                 <Satelite />
+                <Footer/>
                 </div>
                 {/* Optionally include Footer */}
                 {/* <Footer5 /> */}
