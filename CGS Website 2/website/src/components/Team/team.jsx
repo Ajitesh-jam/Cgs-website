@@ -442,7 +442,7 @@
 // export default Team;
 
 import React from 'react';
-import './Team.css'; // External CSS for styling
+import './team.css'; // External CSS for styling
 import team from '../../assets/team.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
@@ -520,13 +520,180 @@ const Team = () => {
       socials: [ "https://www.linkedin.com/in/sai-avinash-seemakurthi-446195261", "mailto:"]},
 
   
-  {id: 9,
-  name: "Shubhankar das",
-  position: "Game Dev Head",
-  image: "https://images.ctfassets.net/7ghyf81o1fuo/3579nliT4FowxSmj6CYWYj/8d78f5fccda6489e31afec49f6e60389/WhatsApp_Image_2024-10-01_at_02.31.30.jpeg",
-  socials: [ "https://www.linkedin.com/in/shubhankar-das-380267261", "mailto:rikidas5621@gmail.com"]}
+      {id: 9,
+      name: "Shubhankar das",
+      position: "Game Dev Head",
+      image: "https://images.ctfassets.net/7ghyf81o1fuo/3579nliT4FowxSmj6CYWYj/8d78f5fccda6489e31afec49f6e60389/WhatsApp_Image_2024-10-01_at_02.31.30.jpeg",
+      socials: [ "https://www.linkedin.com/in/shubhankar-das-380267261", "mailto:rikidas5621@gmail.com"]}
 
   ];
+
+  const gameDev =[
+    {
+      id: 1,
+      name: "Harshwardhan Walunjkar",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1HnH-qbJkJu5POytxkbi7zBsPkxI_LJFj",
+      socials: [
+        "https://www.linkedin.com/in/harshwardhan-walunjkar-93035628b/",
+        "mailto:harshwardhanwada@gmail.com"
+      ]
+    },
+    {
+      id: 2,
+      name: "Abyan Hussain",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1JsDucGm84F9408a1vfXmnMCgRN4dqnkj",
+      socials: [
+        "https://www.linkedin.com/in/abyan-hussain-9009b0286/",
+        "mailto:abyanhussain05@gmail.com"
+      ]
+    },
+    {
+      id: 3,
+      name: "Ayushman Majhi",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1xTfoB3aNx9b8hz4JwRyMEceMFNI0b4tG",
+      socials: [
+        "https://www.linkedin.com/in/ayushman-majhi-635941298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:ayushmandbpc@gmail.com"
+      ]
+    },
+    {
+      id: 4,
+      name: "Harsh Verma",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1ZUyaGDgiiucStmhcIfxSIoUe0SYRkyAr",
+      socials: [
+        "www.linkedin.com/in/harsh-verma-572167287",
+        "mailto:ayush2412200@gmail.com"
+      ]
+    },
+    {
+      id: 5,
+      name: "Vansh Pali",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1RsGbBypBYWBzEvaem2O20MiK8K2LU6v_",
+      socials: [
+        "www.linkedin.com/in/vansh-pali-47b315287",
+        "mailto:vanshrpali905@gmail.com"
+      ]
+    },
+    {
+      id: 6,
+      name: "Manijith Dameruppala",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1TOktlmKKfDliTvm5dXZk5lCVn-v_IpRM",
+      socials: [
+        "https://www.linkedin.com/in/manijith-dameruppala-239530330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:chinnu2nd@gmail.com"
+      ]
+    },
+    {
+      id: 7,
+      name: "Shaurya Baranwal",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1EPJ25awBEqYKkqoqn1VkHB1FGRwoIdDm",
+      socials: [
+        "https://www.linkedin.com/in/shaurya-baranwal-6a240817b/",
+        "mailto:shauryabaranwal1102@gmail.com"
+      ]
+    },
+    {
+      id: 8,
+      name: "Harsh Verma",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1xfoFqqfKGZq2y7jHYj8GOBw1IHYyNwxm",
+      socials: [
+        "www.linkedin.com/in/harsh-verma-572167287",
+        "mailto:ayush2412200@gmail.com"
+      ]
+    }
+  ]
+
+  const graphics =[
+    {
+      id: 1,
+      name: "Kshetrimayum Abo",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1HkZLZ41MUqk98v0_s51eefobGP1Te9by",
+      socials: [
+        "https://www.linkedin.com/in/kshetrimayum-abo-0384a528a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:kshabo2004@gmail.com"
+      ]
+    },
+    {
+      id: 2,
+      name: "Pratyush Parackal",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1etazQ4ll7kYl6UtnD-TTeT6TSOcgSjrk",
+      socials: [
+        "https://www.linkedin.com/in/pratyush-parackal-4b7b77287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:pratyushparackal9@gmail.com"
+      ]
+    },
+    {
+      id: 3,
+      name: "Sudhanshu",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=18kiV-XE8T3IprDcx6hSmjfo_XVwDBKGY",
+      socials: [
+        "https://www.linkedin.com/in/sudhanshu-3174a9294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:sudhanshumahar2401@gmail.com"
+      ]
+    },
+    {
+      id: 4,
+      name: "Jay Gheewala",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1s63rpLrQaXPINxGO-3wLfpUQsmi9KRd5",
+      socials: [
+        "https://www.linkedin.com/in/jay-gheewala-1b886728b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:jaygheewala06@gmail.com"
+      ]
+    },
+    {
+      id: 5,
+      name: "Adeetya Uppal",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1CYUeckxLrp_8gG_Bn5CJ29s390vhHCtR",
+      socials: [
+        "https://www.linkedin.com/in/adeetya-uppal-a552a1290/",
+        "mailto:adeetyauppal1@gmail.com"
+      ]
+    },
+    {
+      id: 6,
+      name: "Adhiraj Singh Brar",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1BYhTMjEsf-a7YEYYh4CiwPNf8ZPvTjGc",
+      socials: [
+        "www.linkedin.com/in/adhiraj-brar-a32aa2289",
+        "mailto:prmoadhiraj2021@gmail.com"
+      ]
+    },
+    {
+      id: 7,
+      name: "Kartik Kaushal",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1RaHxbPShFi902NeTAziou69xuCZS9WT7",
+      socials: [
+        "Kartik Kaushal",
+        "mailto:kartikkaushal131103@gmail.com"
+      ]
+    },
+    {
+      id: 8,
+      name: "Siddharth Konnur",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1ScNYaJlSKZqufGWMVxSOTuW_PdBB1B2r",
+      socials: [
+        "https://in.linkedin.com/in/siddharth-konnur-21b0a128b?original_referer=https%3A%2F%2Fwww.google.com%2F",
+        "mailto:sidkonnur29@gmail.com"
+      ]
+    }
+  ]
+
 
   const getSocialIcon = (platform) => {
     if (platform.includes("linkedin")) return faLinkedin;
