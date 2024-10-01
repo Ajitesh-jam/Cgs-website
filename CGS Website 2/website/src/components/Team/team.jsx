@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import team from '../../assets/team.png';
 import AOS from "aos";
+import { getContent} from '../contentful/ContentfulClient';
 
 const Team = () => {
   const [members, setMembers] = React.useState([]);
