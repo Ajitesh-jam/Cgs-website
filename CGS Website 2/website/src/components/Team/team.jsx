@@ -745,6 +745,60 @@ const Team = () => {
               </div>
             ))}
           </div>
+
+          {/* GameDev Section */}
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Game Developers
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {gameDev.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Graphics Section */}
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Graphics Team
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {graphics.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
