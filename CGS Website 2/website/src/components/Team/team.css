@@ -1,187 +1,91 @@
-.demo { 
-    background: black;
-    padding-top: 2rem;
-}
-
-/* .carousel {
-    position: relative;
-    object-fit: scale-down;
-} */
-
-/* .carousel-image {
-    
-    width: 90%; /* Leave 10% for sidebar 
-    height: 100%; /* Set height to 60% of viewport 
-    background-size: cover; /* Ensure the image covers the entire div 
-    background-position: center; /* Center the image 
-    margin-left: 10%; /* Leave 10% space on the left for sidebar interaction 
-    background-repeat: no-repeat; /* Prevent tiling of the image 
-    border-radius: 10px; /* Optional: Add rounded corners 
-    
-} */
-
-/* .carousel-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent overlay 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-overlay h1 {
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
-} */
-
-.our-team {
-    margin-top: 1vw;
-    border: 0.05rem solid rgb(236,72, 153);
-    border-radius: 0.5rem;
-    text-align: center;
-    position: relative;
-}
-
-.h2 {
-    font-size: 1.2rem; /* smaller font size than h1 */
-    color: #670154; /* different color than h1 */
-    margin-top: 1rem; /* add some space above the subheading */
-    /* other subheading styles */
+/* Overall Section Styling */
+.team-section {
+    background-color: black;
+    padding: 2rem 0;
   }
-.our-team:before,
-.our-team:after {
-    content: "";
+  
+  .headi {
+    color: rgb(236,72,153);
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  
+  .our-team {
+    background-color: #1a1a1a;
+    border: 2px solid rgb(236,72,153);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .our-team:hover {
+    transform: translateY(-10px);
+  }
+  
+  .team-image {
     width: 100%;
-    height: 104%;
-    background: rgb(236,72, 153);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: -1;
-    transform: translateY(-50%) scaleX(0.3);
-    transition: all 0.3s ease 0s;
-}
-
-.our-team:after {
-    width: 106%;
-    left: 50%;
-    transform: translate(-50%, -50%) scaleY(0.25);
-} */
-
-.our-team:hover:before { 
-    transform: translateY(-50%) scaleX(0.7); 
-}
-
-.our-team:hover:after { 
-    transform: translate(-50%, -50%) scaleY(0.7); 
-}
-
-.our-team>img {
-    width: 100%;
-    height:auto;
-    border-radius: 0.25rem;
-    transition: all 0.3s ease 0s;
-    aspect-ratio: 3/3;
-}
-
-.our-team .team-content {
-    width: 93%;
-    padding: 1.5625rem 0 0.625rem;
-    background: rgb(236,72, 153);
-    position: absolute;
-    bottom: 3.125rem;
-    left: 50%;
-    opacity: 0;
-    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-    transform: translateX(-50%);
-    transition: all 0.3s cubic-bezier(0.5, 0.2,0.1,0.9);
-}
-
-.our-team:hover .team-content {
-    bottom: 0.625rem;
-    opacity: 1;
-}
-
-.our-team .title {
-    font-size: 25px;
+    height: auto;
+    aspect-ratio: 2/3;
+    border-bottom: 2px solid rgb(236,72,153);
+  }
+  
+  .team-content {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin: 0;
-}
-
-.our-team .post {
-    display: block;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.our-team .social {
-    padding: 0;
-    margin: 0;
+  }
+  
+  .post {
+    font-size: 1rem;
+    color: rgb(236,72,153);
+  }
+  
+  .social {
     list-style: none;
-}
-
-.our-team .social li {
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .social li a {
     display: inline-block;
-    margin: 0 5px;
-}
-
-.our-team .social li a {
-    display: block;
+    background: white;
+    color: rgb(236,72,153);
     width: 35px;
     height: 35px;
     line-height: 35px;
     border-radius: 50%;
-    background: #fff;
-    font-size: 20px;
-    color: rgb(109, 0, 54);
-    transition: all 0.3s ease 0s;
-}
-
-.our-team .social li a:hover {
-    background: linear-gradient(to bottom, #500258, rgb(32, 0, 49));
-    box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
-    color: #fff;
-}
-
-@media only screen and (max-width: 990px) {
-    .our-team { margin-bottom: 30px; }
-}
-.row {
-    margin: 1vw;
-    padding:1vw;
-    display: grid;
-    gap:1.25rem;
-    grid-template-columns: auto auto;
-    align-items:center ;
-    justify-content:space-around; /* Adjust if needed */
-}
-
-.members {
-     padding: 2rem;
-    /* margin: 5rem; */
-    display: grid;
-    gap: 4rem;
-    justify-content: space-around;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-}
-
-.col-lg-3 {
-    flex: 1 0 20%; /* Ensure 5 cards in a row */
-    max-width: 20%;
-}
-.headi{
-    text-align: center;
-    color:rgb(236,72, 153);
-    font-size: 2rem;
-    font-weight: 800;
-}
+    font-size: 1.25rem;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .social li a:hover {
+    background: rgb(236,72,153);
+    color: white;
+  }
+  
+  /* Responsive Grid Layout */
+  @media (max-width: 768px) {
+    .members {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .members {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

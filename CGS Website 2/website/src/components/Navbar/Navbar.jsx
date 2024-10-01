@@ -106,6 +106,7 @@
 // export default Navbar;
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import Earth from "../../assets/cgsLogoWithoutBg.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -123,7 +124,7 @@ function Navbar() {
     <nav className="bg-black">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-3xl font-bold text-white">
-          <a href="/" className="hover:text-pink-700">C G S</a>
+          <a href="/" className="hover:text-pink-700"><img src={Earth} className="w-[2.5rem] aspect-square"/></a>
         </div>
 
         {/* Hamburger Icon */}

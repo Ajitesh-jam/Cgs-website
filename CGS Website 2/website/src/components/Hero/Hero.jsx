@@ -81,7 +81,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col-reverse md:flex-row items-center">
           {/* Text Section */}
-          <div className="w-full md:w-1/2 lg:w-2/3 p-4">
+          <div className="w-full md:w-1/2 lg:w-2/3 p-4" id="2">
             <div className="bg-black/80 p-6 md:p-10 rounded-lg">
               <h1
                 data-aos="fade-up"

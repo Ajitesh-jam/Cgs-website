@@ -342,12 +342,110 @@
 // export default Team;
 
 
+// import React from 'react';
+// import './Team.css'; // Optional: Use external CSS if needed
+// import team from '../../assets/team.png';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
+
+// import AOS from "aos";
+// import { getContent } from '../contentful/ContentfulClient';
+
+// const Team = () => {
+//   const [members, setMembers] = React.useState([]);
+
+//   React.useEffect(() => {
+//     async function fetchData() {
+//       const data = await getContent('members');
+//       setMembers(data);
+//     }
+
+//     fetchData();
+
+//     AOS.init({
+//       duration: 1300,
+//       easing: "ease-in-out",
+//     });
+//   }, []);
+
+//   const governors = [
+//     {
+//       id: 1,
+//       name: "Ajitesh Jamulkar",
+//       position: "Game Dev Head ",
+//       image: "https://images.ctfassets.net/7ghyf81o1fuo/7aXEy0PcCudid3CfrPA5OW/4c62b5fb79c600921393014e75de03c4/ajitesh.jpeg",
+//       socials: ["https://www.linkedin.com/in/ajitesh-jamulkar-2a5351260/", "mailto:ajitesh.jam@gmail.com"]
+//     },
+//     {
+//       id: 2,
+//       name: "Parikshit Dave",
+//       position: "Public Relation Head",
+//       image: "https://images.ctfassets.net/7ghyf81o1fuo/1DAk028JHgxBpz0076yvNT/d35d65ecfd8df15114809930c44164a2/parikshit.png",
+//       socials: ["https://www.linkedin.com/in/parikshit-dave-ba2983257", "mailto:parikshitdave14@gmail.com"]
+//     },
+    
+
+
+//   ];
+
+//   const getSocialIcon = (platform) => {
+//     if (platform.includes("linkedin")) return faLinkedin;
+//     if (platform.includes("mailto")) return faGoogle;
+//     return '';
+//   };
+
+//   return (
+//     <>
+//       <div className="relative w-full h-[60vh] overflow-hidden">
+//         <div
+//           className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+//           style={{ backgroundImage: `url(${team})` }}
+//         >
+//           <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
+//             <h1 className="text-5xl font-bold text-white drop-shadow-lg"><b>COMPUTER GRAPHICS SOCIETY</b></h1>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div className="demo">
+//         {/* Current Governors Section */}
+//         <div className="container">
+//           <h2 className='headi'>Current Governors</h2>
+//           <div className="members">
+//             {governors.map((member) => (
+//               <div className="" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
+//                 <div className="our-team">
+//                   <img src={member.image} alt={member.name} />
+//                   <div className="team-content">
+//                     <h3 className="title">{member.name}</h3>
+//                     <span className="post">{member.position}</span>
+//                     <ul className="social">
+//                       {member.socials.map((social, index) => (
+//                         <li key={index}>
+//                           <a href={social}>
+//                             <FontAwesomeIcon icon={getSocialIcon(social)}></FontAwesomeIcon>
+//                           </a>
+//                         </li>
+//                       ))}
+//                     </ul>
+//                   </div>
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Team;
+
 import React from 'react';
-import './Team.css'; // Optional: Use external CSS if needed
+import './Team.css'; // External CSS for styling
 import team from '../../assets/team.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
-
 import AOS from "aos";
 import { getContent } from '../contentful/ContentfulClient';
 
@@ -372,7 +470,7 @@ const Team = () => {
     {
       id: 1,
       name: "Ajitesh Jamulkar",
-      position: "Game Dev Head ",
+      position: "Game Dev Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/7aXEy0PcCudid3CfrPA5OW/4c62b5fb79c600921393014e75de03c4/ajitesh.jpeg",
       socials: ["https://www.linkedin.com/in/ajitesh-jamulkar-2a5351260/", "mailto:ajitesh.jam@gmail.com"]
     },
@@ -428,7 +526,6 @@ const Team = () => {
   image: "https://images.ctfassets.net/7ghyf81o1fuo/3579nliT4FowxSmj6CYWYj/8d78f5fccda6489e31afec49f6e60389/WhatsApp_Image_2024-10-01_at_02.31.30.jpeg",
   socials: [ "https://www.linkedin.com/in/shubhankar-das-380267261", "mailto:rikidas5621@gmail.com"]}
 
-
   ];
 
   const getSocialIcon = (platform) => {
@@ -439,34 +536,39 @@ const Team = () => {
 
   return (
     <>
-      <div className="relative w-full h-[60vh] overflow-hidden">
+      {/* Hero Section */}
+      <div className="relative w-full h-[50vh] overflow-hidden bg-black bg-opacity-50">
         <div
           className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${team})` }}
         >
           <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-            <h1 className="text-5xl font-bold text-white drop-shadow-lg"><b>COMPUTER GRAPHICS SOCIETY</b></h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white text-center drop-shadow-lg">
+              <b>COMPUTER GRAPHICS SOCIETY</b>
+            </h1>
           </div>
         </div>
       </div>
 
-      <div className="demo">
-        {/* Current Governors Section */}
-        <div className="container">
-          <h2 className='headi'>Current Governors</h2>
-          <div className="members">
+      {/* Team Members Section */}
+      <div className="team-section py-16 bg-black">
+        <div className="container mx-auto">
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mb-10 text-pink-500">
+            Current Governors
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {governors.map((member) => (
-              <div className="" key={member.id} data-aos="fade-up"> {/* Adjusted columns */}
-                <div className="our-team">
-                  <img src={member.image} alt={member.name} />
-                  <div className="team-content">
-                    <h3 className="title">{member.name}</h3>
-                    <span className="post">{member.position}</span>
-                    <ul className="social">
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
                       {member.socials.map((social, index) => (
                         <li key={index}>
-                          <a href={social}>
-                            <FontAwesomeIcon icon={getSocialIcon(social)}></FontAwesomeIcon>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
                           </a>
                         </li>
                       ))}
