@@ -202,6 +202,7 @@ import 'aos/dist/aos.css';
 import game1 from '../../assets/Vansh.png';
 import game2 from '../../assets/RND.png';
 import game3 from '../../assets/cgsLogoWithoutBg.png';
+import Flip from './fl';
 import { useNavigate } from 'react-router-dom';
 
 const GameDev = () => {
@@ -296,24 +297,13 @@ const GameDev = () => {
           <h1 className="text-5xl text-pink-400 mb-8 text-center"  data-aos-once='true'data-aos="zoom-in">Action Games</h1>
           <div className="flex flex-wrap gap-8 justify-center">
             {actionGames.map((game) => (
-              <div
-                key={game.id}
-                className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
-                data-aos="zoom-in"
-                data-aos-once='true'
-                onClick={() => handleCardClick(game)}
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src={game.image}
-                    alt={game.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                  <div className="absolute bottom-0 w-full bg-black bg-opacity-75 py-2">
-                    <h2 className="text-center text-lg text-white">{game.name}</h2>
-                  </div>
-                </div>
-              </div>
+              <Flip
+              key={game.id}
+              title={game.name}
+              image={game.image}
+              description={game.creator}
+              details={game.linkedin}
+            />
             ))}
           </div>
         </div>
@@ -324,24 +314,13 @@ const GameDev = () => {
           <h1 className="text-5xl text-pink-400 mb-8 text-center" data-aos-once='true' data-aos="zoom-in">Story Games</h1>
           <div className="flex flex-wrap gap-8 justify-center">
             {storyGames.map((game) => (
-              <div
-                key={game.id}
-                className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
-                data-aos="zoom-in"
-                data-aos-once='true'
-                onClick={() => handleCardClick(game)}
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src={game.image}
-                    alt={game.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                  <div className="absolute bottom-0 w-full bg-black bg-opacity-75 py-2">
-                    <h2 className="text-center text-lg text-white">{game.name}</h2>
-                  </div>
-                </div>
-              </div>
+              <Flip
+              key={game.id}
+              title={game.name}
+              image={game.image}
+              description={game.creator}
+              details={game.linkedin}
+            />
             ))}
           </div>
         </div>
@@ -352,24 +331,13 @@ const GameDev = () => {
           <h1 className="text-5xl text-pink-400 mb-8 text-center" data-aos-once='true' data-aos="zoom-in">Puzzle Games</h1>
           <div className="flex flex-wrap gap-8 justify-center">
             {puzzleGames.map((game) => (
-              <div
-                key={game.id}
-                className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
-                data-aos="zoom-in"
-                data-aos-once='true'
-                onClick={() => handleCardClick(game)}
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src={game.image}
-                    alt={game.name}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                  <div className="absolute bottom-0 w-full bg-black bg-opacity-75 py-2">
-                    <h2 className="text-center text-lg text-white">{game.name}</h2>
-                  </div>
-                </div>
-              </div>
+              <Flip
+              key={game.id}
+              title={game.name}
+              image={game.image}
+              description={game.creator}
+              details={game.linkedin}
+            />
             ))}
           </div>
         </div>
@@ -401,3 +369,22 @@ const GameDev = () => {
 };
 
 export default GameDev;
+
+// <div
+//                 key={game.id}
+//                 className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
+//                 data-aos="zoom-in"
+//                 data-aos-once='true'
+//                 onClick={() => handleCardClick(game)}
+//               >
+//                 <div className="relative w-full h-full">
+//                   <img
+//                     src={game.image}
+//                     alt={game.name}
+//                     className="w-full h-full object-cover rounded-lg"
+//                   />
+//                   <div className="absolute bottom-0 w-full bg-black bg-opacity-75 py-2">
+//                     <h2 className="text-center text-lg text-white">{game.name}</h2>
+//                   </div>
+//                 </div>
+//               </div>

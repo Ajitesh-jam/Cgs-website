@@ -151,7 +151,7 @@ function Navbar() {
           <a href="#" className="hover:text-pink-500 " onClick={()=>{handleNavigation("Team")}}>Team</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
-          <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Research</a>
+          <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
         </div>
       </div>
 
@@ -161,7 +161,7 @@ function Navbar() {
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Team")}}>Team</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
-          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Research</a>
+          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
         </div>
       </div>
     </nav>

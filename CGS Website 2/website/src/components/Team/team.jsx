@@ -55,6 +55,7 @@ const Team = () => {
 
       <div className="demo">
         <div className="container">
+        <h1 className="text-center text-5xl font-bold text-pink-500 mb-8">Meet the Team</h1>
           <h2 className='headi'>Current Governors</h2>
           <div className="row">
             {governors.map((member) => (
