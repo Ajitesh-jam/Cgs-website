@@ -293,13 +293,14 @@ const GameDev = () => {
       {/* Action Games Section */}
       <div className="py-10">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl text-pink-400 mb-8 text-center" data-aos="zoom-in">Action Games</h1>
+          <h1 className="text-5xl text-pink-400 mb-8 text-center"  data-aos-once='true'data-aos="zoom-in">Action Games</h1>
           <div className="flex flex-wrap gap-8 justify-center">
             {actionGames.map((game) => (
               <div
                 key={game.id}
                 className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
                 data-aos="zoom-in"
+                data-aos-once='true'
                 onClick={() => handleCardClick(game)}
               >
                 <div className="relative w-full h-full">
@@ -320,13 +321,14 @@ const GameDev = () => {
 
       <div className="py-10">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl text-pink-400 mb-8 text-center" data-aos="zoom-in">Story Games</h1>
+          <h1 className="text-5xl text-pink-400 mb-8 text-center" data-aos-once='true' data-aos="zoom-in">Story Games</h1>
           <div className="flex flex-wrap gap-8 justify-center">
             {storyGames.map((game) => (
               <div
                 key={game.id}
                 className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
                 data-aos="zoom-in"
+                data-aos-once='true'
                 onClick={() => handleCardClick(game)}
               >
                 <div className="relative w-full h-full">
@@ -347,13 +349,14 @@ const GameDev = () => {
       
       <div className="py-10">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl text-pink-400 mb-8 text-center" data-aos="zoom-in">Puzzle Games</h1>
+          <h1 className="text-5xl text-pink-400 mb-8 text-center" data-aos-once='true' data-aos="zoom-in">Puzzle Games</h1>
           <div className="flex flex-wrap gap-8 justify-center">
             {puzzleGames.map((game) => (
               <div
                 key={game.id}
                 className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-lg shadow-lg transition-transform transform hover:scale-105"
                 data-aos="zoom-in"
+                data-aos-once='true'
                 onClick={() => handleCardClick(game)}
               >
                 <div className="relative w-full h-full">
