@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import AOS from "aos";
 import './graphics.css';
 import Graphics1 from "../../assets/Vansh.png";
-import Graphics2 from "../../assets/Rnd.png";
+import Graphics2 from "../../assets/RND.png";
 import Graphics3 from "../../assets/cgsLogoWithoutBg.png";
 import { useNavigate } from 'react-router-dom';
 
