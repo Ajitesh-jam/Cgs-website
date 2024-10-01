@@ -5,7 +5,7 @@ import './Hero.css'
 
 const Hero = () => {
   return (
-    <div className="bg-black/0 h-full m-1 pb-5">
+    <div className="bg-black/0 h-full m-1 pt-20 pb-20">
       <div className="h-full flex justify-center items-center p-4">
         <div className="container grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="bg-black/80 p-10 text-white space-y-4 lg:pr-36 rounded-lg">

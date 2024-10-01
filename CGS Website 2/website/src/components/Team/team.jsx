@@ -58,7 +58,7 @@ const Team = () => {
           <h2 className='headi'>Current Governors</h2>
           <div className="row">
             {governors.map((member) => (
-              <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos="fade-up">
+              <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos-once='true' data-aos="fade-up">
                 <div className="our-team">
                   <img src={images[member.image]} alt={member.name} />
                   <div className="team-content">
@@ -84,7 +84,7 @@ const Team = () => {
           <h2 className='headi'>Advisors</h2>
           <div className="row">
             {advisors.map((member) => (
-              <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos="fade-up">
+              <div className="col-lg-3 col-md-4 col-sm-6" key={member.id} data-aos-once='true' data-aos="fade-up">
                 <div className="our-team">
                   <img src={images[member.image]} alt={member.name} />
                   <div className="team-content">
