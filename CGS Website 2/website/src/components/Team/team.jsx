@@ -48,7 +48,7 @@ const Team = () => {
           style={{ backgroundImage: `url(${team})` }}
         >
           <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-            <h1 className="text-5xl font-bold text-white drop-shadow-lg"><b>COMPUTER GRAPHICS SOCIETY</b></h1>
+            <h1 className="text-5xl font-bold text-white drop-shadow-lg text-center"><b>COMPUTER GRAPHICS SOCIETY</b></h1>
           </div>
         </div>
       </div>

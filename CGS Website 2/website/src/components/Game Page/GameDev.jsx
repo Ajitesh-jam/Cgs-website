@@ -286,7 +286,7 @@ const GameDev = () => {
           style={{ backgroundImage: `url(${carouselGames[currentGame]})` }}
         >
           <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-            <h1 className="text-5xl font-bold text-white drop-shadow-lg">Game Development</h1>
+            <h1 className="text-5xl font-bold text-white drop-shadow-lg text-center">Game Development</h1>
           </div>
         </div>
       </div>
