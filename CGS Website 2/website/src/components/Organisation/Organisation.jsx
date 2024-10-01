@@ -102,7 +102,7 @@ const Organisation = () => {
                 className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover rounded-xl space-y-3 p-4 border-white space-y-3 xl:pr-3 p-4 border-r-2 border-b-4 border-r-white border-b-white"
               />
             </div>
-            <div className="h-full flex flex-col justify-center bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-pink-500 border-b-pink-500 rounded-2xl aspect-video">
+            <div className="bg-black space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-pink-500 border-b-pink-500 rounded-2xl aspect-video">
               
               <h1
                 data-aos="fade-up"
@@ -119,7 +119,7 @@ const Organisation = () => {
   data-aos="fade-up"
   data-aos-delay="500"
   data-aos-once='true'
-  className="w-fit bg-gradient-to-r from-pink-500 to-pink-700 text-white px-8 py-2 rounded-md hover:bg-pink-600 transition duration-300 m-1"
+  className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-8 py-2 rounded-md hover:bg-pink-600 transition duration-300 m-1"
 >
   EXPLORE MORE..
 </button>

@@ -12,6 +12,8 @@ import "aos/dist/aos.css";
 import GameDev from "./components/Game Page/GameDev.jsx";
 import Graphics from "./components/Graphics/Graphics.jsx";
 import Team from "./components/Team/team.jsx";
+import Footer from "./components/Footer/Footer5.jsx";
+import Research from "./components/Research/Research.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -27,7 +29,7 @@ const App = () => {
   return (
     <Router>
       <div>
-      <Routes>
+       <Routes>
           {/* Home Page Route */}
           <Route
             path="/"
@@ -49,6 +51,7 @@ const App = () => {
                 <HeroCard />
                 <Organisation />
                 <Satelite />
+                <Footer/>
                 </div>
                 {/* Optionally include Footer */}
                 {/* <Footer5 /> */}
@@ -65,8 +68,9 @@ const App = () => {
 
           <Route path="/Team" element={<><Navbar/><Team/>
               </>} />
-        </Routes>
-      </div>
+          <Route path='/Research' element={<><Navbar/><Research/></>}/>
+         </Routes>
+       </div>
     </Router>
   );
 };

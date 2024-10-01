@@ -29,8 +29,8 @@ const ServiceData = [
 const HeroCard = () => {
   return (
     <>
-    <div className="bg-black pt-0.5">
-      <section className="bg-black pt-7" id="services">
+    <div className="bg-black/30 shadow-2xl shadow-black">
+      <section className="bg-black/80 pt-7" id="services">
         <div className="container">
           <div className="min-h-[400px]">
             <div>
