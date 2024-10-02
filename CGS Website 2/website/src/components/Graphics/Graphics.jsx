@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import AOS from "aos";
 import 'aos/dist/aos.css';  // Import AOS styles
 import game1 from "../../assets/Vansh.png";
-import game2 from "../../assets/Rnd.png";
+import game2 from "../../assets/RND.png";
 import game3 from "../../assets/cgsLogoWithoutBg.png";
-import './Graphics.css'; // Custom styles for the page
+import './graphics.css'; // Custom styles for the page
 
 const Graphics = () => {
   const [currentGame, setCurrentGame] = useState(0);
