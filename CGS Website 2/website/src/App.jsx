@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero.jsx";
 import HeroCard from "./components/HeroCard/HeroCard.jsx";
-import BgVideo from "./assets/worldBuild.mp4";
+import BgVideo from "./assets/bgTheme.mp4";
 import Organisation from "./components/Organisation/Organisation.jsx";
 import Satelite from "./components/Satelite/Satelite.jsx";
 import Footer5 from "./components/Footer/Footer5.jsx";
