@@ -1,8 +1,8 @@
 import React from 'react';
 import FlippingCard from './flip'; // Import the FlippingCard component
-import VR from '../../assets/RND/VR.png';
-import AR from '../../assets/RND/AR.png';
-import openCV from '../../assets/RND/openCV.png';
+import VR from '../../assets/RnD/VR.png';
+import AR from '../../assets/RnD/AR.png';
+import openCV from '../../assets/RnD/openCV.png';
 
 const Team = () => {
   const members = [

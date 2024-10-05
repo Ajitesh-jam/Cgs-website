@@ -601,16 +601,6 @@ const Team = () => {
     },
     {
       id: 8,
-      name: "Harsh Verma",
-      position: "GameDev",
-      image: "https://drive.google.com/open?id=1xfoFqqfKGZq2y7jHYj8GOBw1IHYyNwxm",
-      socials: [
-        "www.linkedin.com/in/harsh-verma-572167287",
-        "mailto:ayush2412200@gmail.com"
-      ]
-    },
-    {
-      id: 9,
       name: "Harshwardhan Walunjkar",
       position: "GameDev",
       image: "https://drive.google.com/open?id=1HnH-qbJkJu5POytxkbi7zBsPkxI_LJFj",
@@ -618,7 +608,27 @@ const Team = () => {
         "https://www.linkedin.com/in/harshwardhan-walunjkar-93035628b/",
         "mailto:harshwardhanwada@gmail.com"
       ]
-    }
+    },
+    {
+      id: 9,
+      name: "Dhanvith Nayak",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1ovgXlNYUeP9xQKbYjAyaD-ti3qey0iTw",
+      socials: [
+        "https://www.linkedin.com/in/dhanvith-nayak-72a9b9211/",
+        "mailto:dhanpran3@gmail.com"
+      ]
+    },
+    {
+      id: 10,
+      name: "Kshitij Agarwal",
+      position: "GameDev",
+      image: "https://drive.google.com/open?id=1u-bvioYCT9pMSAcYdxQ9H3BkzFKqSt1A",
+      socials: [
+        "https://linkedin.com/in/kshitij-agarwal-5361a42a0",
+        "mailto:kshagarwal373@gmail.com",
+      ]
+    },
   ]
 
   const graphics =[
@@ -701,6 +711,56 @@ const Team = () => {
         "https://in.linkedin.com/in/siddharth-konnur-21b0a128b?original_referer=https%3A%2F%2Fwww.google.com%2F",
         "mailto:sidkonnur29@gmail.com"
       ]
+    },
+    {
+      id: 9,
+      name: "Atreya Bordoloi",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1XQEqxYOoYas2Wm-sQYullcANI79-M6Oe",
+      socials: [
+        "http://www.linkedin.com/in/atreya-bordoloi-94279727b",
+        "mailto:atreyabordoloi@gmail.com"
+      ]
+    },
+    {
+      id: 10,
+      name: "Satwik Midya",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1fmgwXHdDLWoMoTASlg01v-aVwsDj3YXF",
+      socials: [
+        "https://www.linkedin.com/in/satwik-midya-47b618270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:satwikmidya@gmail.com"
+      ]
+    },
+    {
+      id: 11,
+      name: "Dheeraj Balaji",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1u_a0O57SCc8yYka-hQBaQ-Ajs6DkvETN",
+      socials: [
+        "https://www.linkedin.com/in/dheeraj-balaji-12884627b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:dheerajbalajibellamkonda@gmail.com"
+      ]
+    },
+    {
+      id: 12,
+      name: "Zoya Alam",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1fHIJ3LLgZeeZlvHQoJwg4OFdEGSO_eAt",
+      socials: [
+        "https://www.linkedin.com/in/zoya-alam-a02914297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:alamzoya2004@gmail.com"
+      ]
+    },
+    {
+      id: 13,
+      name: "Sri Charan Budumuru",
+      position: "Graphics",
+      image: "https://drive.google.com/open?id=1c5RCWv1MIyF1XabsUfLNpwM7uEl5_yZO",
+      socials: [
+        "https://www.linkedin.com/in/sri-charan-budumuru-76bb77330/",
+        "mailto:bsricharan14@gmail.com"
+      ]
     }
   ]
 
@@ -722,6 +782,41 @@ const Team = () => {
       ]
   }]
 
+  const pr =[
+    {
+      id: 1,
+      name: "Ankit Anand",
+      position: "Public Relations",
+      image: "https://drive.google.com/open?id=1xYX1yg2e5Z-g66Zjt0rBcI1mm2SyDUaR",
+      socials: [
+        "www.linkedin.com/in/ankit-anand-159442295",
+        "mailto:ankitanand3027@gmail.com"
+      ]
+    },
+    {
+      id: 2,
+      name: "Kavya Nagar",
+      position: "Public Relations",
+      image: "https://drive.google.com/open?id=1QWsyFaBNjHiSSP5-K_MfR10aa4DoWMmZ",
+      socials: [
+        "https://www.linkedin.com/in/kavya-nagar-a8b468288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "mailto:kavyanagar@kgpian.iitkgp.ac.in"
+      ]
+    }
+  ];
+  const cc =[
+    {    
+      id: 14,
+      name: "Pranav Bhujbal",
+      position: "Content Creation",
+      image: "https://drive.google.com/open?id=1PwkMDhVn46disx2Znv7Mi-0hBdBA7nfw",
+      socials: [
+        "https://www.linkedin.com/in/pranavbhujbal",
+        "mailto:ppbhujbal11@gmail.com"
+      
+      ]
+    },
+  ];
 
   const getSocialIcon = (platform) => {
     if (platform.includes("linkedin")) return faLinkedin;
@@ -832,6 +927,56 @@ const Team = () => {
           </h2>
           <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {webdev.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Public Relations
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {pr.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Content Creation
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {cc.map((member) => (
               <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
                 <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
                   <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
