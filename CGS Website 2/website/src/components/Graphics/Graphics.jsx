@@ -14,15 +14,15 @@ const Graphics = () => {
   const [selectedGame, setSelectedGame] = useState(null); // State to track selected game for popup
   const [isPopupVisible, setIsPopupVisible] = useState(false); // State to track popup visibility
 
-  const carouselGames = [game1, game2, game3];
+  const carouselGames = ['https://images.ctfassets.net/7ghyf81o1fuo/89HjoEauCLVwk4ZyKqGEz/e4582e146489c2eabc43c38e5acf08bb/icecream.png', 'https://images.ctfassets.net/7ghyf81o1fuo/573G2hgbJp2FoNSRPE2hiK/23092d333add74a338781e531aee598b/Screenshot_2024-10-07_at_3.00.46_AM.png', 'https://images.ctfassets.net/7ghyf81o1fuo/6zio4ZhDt3dEtWiktLXTCM/87ced42ffc6e78a5ca37bbedbc92a1b0/Screenshot_2024-10-07_at_3.00.29_AM.png','https://images.ctfassets.net/7ghyf81o1fuo/17Lj9q9nWQUf7M47jwo1rN/3134485d8ae4eec3753b7a8036f3f6fc/Screenshot_2024-10-07_at_3.04.57_AM.png'];
 
   const games = [
-    { id: 1, name: 'Game 1', image: 'https://images.ctfassets.net/7ghyf81o1fuo/5xZWORv1h2A1evfxfEAl01/82dcd7f841bba0574cdf0d090ab308fe/pratyush.png'},
-    { id: 2, name: 'Game 2', image: 'https://images.ctfassets.net/7ghyf81o1fuo/5ETNTaJRmLF8sKVCSusotq/5bf7d9df3f409ef1fbd8b59446f18a12/Whale.png'},
-    { id: 3, name: 'Game 3', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7EVarOK7aHmPlv2Shk1h27/149659ec21e27e7d8e3394372d437b50/Ring.png'},
-    { id: 4, name: 'Game 4', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3HhsghKkWV1om8lcGAu8Uh/d396aad63c1b840b42fe0b8d30c8b799/waterfall.png'},
-    { id: 5, name: 'Game 5', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3PAzxTXZV8mUQXCp7jCVkF/cb4e13eb59850c99ffcd637b879ad335/CGSwalle2.png'},
-    { id: 5, name: 'Game 6', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7L7hxi7KrWvToNsFBlAfBz/2e11dff63114cd5aef73769cd907d8ab/adeetya.png'},
+    { id: 1, name: 'Sea ', image: 'https://images.ctfassets.net/7ghyf81o1fuo/5xZWORv1h2A1evfxfEAl01/82dcd7f841bba0574cdf0d090ab308fe/pratyush.png'},
+    { id: 2, name: 'Whale', image: 'https://images.ctfassets.net/7ghyf81o1fuo/5ETNTaJRmLF8sKVCSusotq/5bf7d9df3f409ef1fbd8b59446f18a12/Whale.png'},
+    { id: 3, name: 'Ring', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7EVarOK7aHmPlv2Shk1h27/149659ec21e27e7d8e3394372d437b50/Ring.png'},
+    { id: 4, name: 'waterfall', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3HhsghKkWV1om8lcGAu8Uh/d396aad63c1b840b42fe0b8d30c8b799/waterfall.png'},
+    { id: 5, name: 'CGS Wall E', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3PAzxTXZV8mUQXCp7jCVkF/cb4e13eb59850c99ffcd637b879ad335/CGSwalle2.png'},
+    { id: 5, name: 'Beach', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7L7hxi7KrWvToNsFBlAfBz/2e11dff63114cd5aef73769cd907d8ab/adeetya.png'},
   ];
 
   
@@ -94,44 +94,7 @@ const Graphics = () => {
 
       <Satellite/>
 
-      {/* Popup Modal */}
-      {isPopupVisible && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="bg-gray-800 p-6 rounded-lg w-[90%] max-w-lg shadow-lg">
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-2xl text-pink-400">{selectedGame.name}</h2>
-              <button
-                className="text-white text-3xl focus:outline-none"
-                onClick={handleClosePopup}
-              >
-                &times;
-              </button>
-            </div>
-            <div className="text-center">
-              <img
-                src={selectedGame.image}
-                alt={selectedGame.name}
-                className="w-full h-48 object-cover rounded-md mb-4"
-              />
-              <h3 className="text-xl text-pink-400">
-                Creator:{" "}
-                <a
-                  href={selectedGame.linkedin}
-                  className="cursor-pointer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {selectedGame.creator}
-                </a>
-              </h3>
-              <p className="mt-4 text-white">Description: This is a sample description for the selected game.</p>
-              <p className="mt-2 text-pink-400 cursor-pointer">
-                Download Link: Download {selectedGame.name}
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 };
