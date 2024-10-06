@@ -1,54 +1,57 @@
 import React from "react";
-
+import Earth from "../../assets/cgsLogoWithoutBg.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGoogle, faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  
+  const handleNavigation = (name) => {
+    navigate(`/${name}`);
+  };
   return (
-    <div className="bg-primary">
+    <div className="bg-dark">
       <section className="max-w-[1400px] mx-auto text-white">
-        <div className="grid md:grid-cols-3 py-5">
+        <div className="grid md:grid-cols-3 py-5 m-2">
           {/* first column */}
           <div className="py-8 px-4">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-              Spacer
-            </h1>
-            <p className="text-gray-400">
-              Subscribe to our{" "}
-              <span className="text-white font-bold">newsletter</span> for the
-              monthly news updates.
-            </p>
-            <br />
-            <div className="flex items-center h-10">
-              <input
-                className="py-1 px-3 w-full h-[100%] inline-block focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 bg-gray-800 border-gray-200 border-2"
-                type="text"
-                placeholder="Email"
-              />
-              <button className="bg-white hover:bg-white-200/75 h-full inline-block py-2 px-6 text-black">
-                Ok
-              </button>
+            <div className="">
+              <img src={Earth} className="w-[7rem] aspect-[3/3]"/>
             </div>
+            <h1 className="sm:text-3xl text-xl text-pink-500 font-bold sm:text-left text-justify mb-3">
+              Computer Graphics Society
+            </h1>
+            <p className="text-white">
+              Indian Institute of Technology Kharagpur, West Bengal-721302
+            </p>
           </div>
           {/* Second column */}
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
             <div className="">
               <div className="py-8 px-4">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                <h1 className="sm:text-xl text-xl font-bold text-pink-500 sm:text-left text-justify mb-3">
                   Important Links
                 </h1>
                 <ul className={`flex flex-col gap-3 `}>
-                  <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">About</li>
+                  <li className="cursor-pointer"><a href='#2'>Home</a></li>
+                  <li className="cursor-pointer"><a href='' onClick={handleNavigation('GameDev')}>Game development</a></li>
+                  <li className="cursor-pointer"><a onClick={handleNavigation('Graphics')}>Graphics</a></li>
+                  <li className="cursor-pointer">Team</li>
+                  <li className="cursor-pointer">Research</li>
                 </ul>
               </div>
             </div>
             <div className="">
               <div className="py-8 px-4">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+                <h1 className="sm:text-xl text-xl font-bold text-pink-500 sm:text-left text-justify mb-3">
                   Links
                 </h1>
-                <ul className="flex flex-col gap-3 ">
-                  <li className="cursor-pointer">Home</li>
-                  <li className="cursor-pointer">About</li>
+                <ul className="flex flex-row gap-3 ">
+                  <li className="cursor-pointer text-3xl"><a href="https://www.linkedin.com/company/computer-graphics-lab/"> <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> </a> </li>
+                  <li className="cursor-pointer text-3xl"><a href="mailto:cgsiitkgp@gmail.com"> <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon> </a> </li>
+                  <li className="cursor-pointer text-3xl"><a href="https://www.facebook.com/cgsiitkgp?mibextid=ZbWKwL"> <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> </a> </li>
+                  <li className="cursor-pointer text-3xl"><a href="https://www.instagram.com/cgs_iitkgp?igsh=ZThzdW9taXg5Y2o5"> <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon> </a> </li>
                 </ul>
               </div>
             </div>
@@ -57,7 +60,7 @@ const Footer = () => {
         <div className="hidden sm:block">
           <div className="flex justify-between items-center text-center py-6 border-t-2 border-gray-300/40 mx-auto">
             <span className="text-gray-400">
-              @Copyright Spacer 2024
+              @Copyright Computer Graphics Society, IIT Kharagpur
             </span>
           </div>
         </div>

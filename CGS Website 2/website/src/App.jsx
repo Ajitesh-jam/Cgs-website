@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero.jsx";
 import HeroCard from "./components/HeroCard/HeroCard.jsx";
-import BgVideo from "./assets/worldBuild.mp4";
+import BgVideo from "./assets/bgTheme.mp4";
 import Organisation from "./components/Organisation/Organisation.jsx";
 import Satelite from "./components/Satelite/Satelite.jsx";
 import Footer5 from "./components/Footer/Footer5.jsx";
@@ -12,6 +12,9 @@ import "aos/dist/aos.css";
 import GameDev from "./components/Game Page/GameDev.jsx";
 import Graphics from "./components/Graphics/Graphics.jsx";
 import Team from "./components/Team/team.jsx";
+import Footer from "./components/Footer/Footer5.jsx";
+import Research from "./components/Research/Research.jsx";
+import cgsLogoWithoutBg from "./assets/cgsLogoWithoutBg.png"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -27,7 +30,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Routes>
+       <Routes>
           {/* Home Page Route */}
           <Route
             path="/"
@@ -45,11 +48,12 @@ const App = () => {
                   </video>
                   <Navbar />
                   <Hero />
-                </div>
+                
                 <HeroCard />
                 <Organisation />
                 <Satelite />
-                
+                <Footer/>
+                </div>
                 {/* Optionally include Footer */}
                 {/* <Footer5 /> */}
               </div>
@@ -60,13 +64,14 @@ const App = () => {
           <Route path="/GameDev" element={<><Navbar/>  <GameDev />
              </>} />
            {/* Graphics Page Route */}
-                    <Route path="/Graphics" element={<><Navbar/>  <Graphics />
+                    <Route path="/Graphics" element={<> <Navbar/>  <Graphics />
              </>} />   
 
-          <Route path="/Team" element={<><Team/>
+          <Route path="/Team" element={<><Navbar/><Team/>
               </>} />
-        </Routes>
-      </div>
+          <Route path='/Research' element={<><Navbar/><Research/></>}/>
+         </Routes>
+       </div>
     </Router>
   );
 };
