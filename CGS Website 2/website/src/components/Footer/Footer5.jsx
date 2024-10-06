@@ -48,10 +48,10 @@ const Footer = () => {
                   Links
                 </h1>
                 <ul className="flex flex-row gap-3 ">
-                  <li className="cursor-pointer text-3xl"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></li>
-                  <li className="cursor-pointer text-3xl"><FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></li>
-                  <li className="cursor-pointer text-3xl"><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
-                  <li className="cursor-pointer text-3xl"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></li>
+                  <li className="cursor-pointer text-3xl"><a href="https://www.linkedin.com/company/computer-graphics-lab/"> <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> </a> </li>
+                  <li className="cursor-pointer text-3xl"><a href="mailto:cgsiitkgp@gmail.com"> <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon> </a> </li>
+                  <li className="cursor-pointer text-3xl"><a href="https://www.facebook.com/cgsiitkgp?mibextid=ZbWKwL"> <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> </a> </li>
+                  <li className="cursor-pointer text-3xl"><a href="https://www.instagram.com/cgs_iitkgp?igsh=ZThzdW9taXg5Y2o5"> <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon> </a> </li>
                 </ul>
               </div>
             </div>

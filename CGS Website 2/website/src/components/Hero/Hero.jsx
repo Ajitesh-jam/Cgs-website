@@ -103,6 +103,7 @@ const Hero = () => {
                 data-aos-delay="500"
                 data-aos-once="true"
                 className="mt-6 bg-pink-500 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                
               >
                 Explore..
               </button>

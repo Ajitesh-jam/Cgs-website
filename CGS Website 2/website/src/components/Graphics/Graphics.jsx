@@ -6,6 +6,9 @@ import game2 from "../../assets/RND.png";
 import game3 from "../../assets/cgsLogoWithoutBg.png";
 import './graphics.css'; // Custom styles for the page
 
+
+
+
 const Graphics = () => {
   const [currentGame, setCurrentGame] = useState(0);
   const [selectedGame, setSelectedGame] = useState(null); // State to track selected game for popup
@@ -63,7 +66,7 @@ const Graphics = () => {
         <div className="cards-container">
           {games.map((game) => (
             <div
-              key={game.id}
+              key={game.id} 
               className="w-[20vw] h-[20vw] bg-black border-2 border-white rounded-full shadow-lg transition-transform transform hover:scale-105"
               data-aos="zoom-in"
               data-aos-once="true"
@@ -133,160 +136,181 @@ const Graphics = () => {
 export default Graphics;
 
 
-import featuredGame from "../../assets/parag.mp4";
-import featuredAnimation from "../../assets/animation.mp4";
-import featuredAnimation2 from "../../assets/animation2.mp4";
+import musicVisual from "../../assets/Graphics/musicVisualize.mp4";
+
+import coffee from "../../assets/Graphics/coffee.mp4";
+import feni from "../../assets/Graphics/product.mp4";
+
+
+const graphics = [
+  {
+    id: 1,
+    name: 'Music Visualizer',
+    video: musicVisual,
+    creators: ['Kartik Kaushal', 'Rishabh Parihar', 'Kshetrimayum Abo'],
+    linkedin: [
+      'https://www.linkedin.com/in/kartik-kaushal-5b4992293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      'https://www.linkedin.com/in/rishabh-parihar-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      'https://www.linkedin.com/in/kshetrimayum-abo-0384a528a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    ],
+    description:
+      'The project focuses on making an interactive music reactor that reacts accordingly to the beats of the music. It makes an attempt to make the audio be enjoyed as a visual medium too and not only through audio.',
+  },
+
+  {
+    id: 2,
+    name: 'Motion tacking and VFX ',
+    video: 'https://videos.ctfassets.net/7ghyf81o1fuo/5VffwIYnDdFlToi9ILAVyh/ba4d0d75c9b3c68ecad9ac709369ff48/vfx.mp4',
+    creators: ['Sri Charan', 'Atreya Bordoloi', 'Sudhanshu'],
+    linkedin: [
+      'https://www.linkedin.com/in/sri-charan-budumuru-76bb77330',
+      'https://www.linkedin.com/in/atreya-bordoloi-94279727b ',
+      'https://www.linkedin.com/in/sudhanshu-mahar',
+    ],
+    description:
+      'This video was created using Blender`s motion tracking and VFX techniques. It demonstrates advanced visual effects, where a car is selected through a smartwatch and appears in front of the viewer, blending real-world footage with CGI.',
+  },
+
+  {
+    id: 3,
+    name: 'Motion Capture',
+    video: 'https://videos.ctfassets.net/7ghyf81o1fuo/7ofTVOic40MbZPtJQK2PYH/9be2bb8388f7f9cb92dea24bbe46dd64/AboMotionCapture.mp4',
+    creators: ['Kshetrimayum Abo'],
+    linkedin: [
+      
+      'https://www.linkedin.com/in/kshetrimayum-abo-0384a528a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    ],
+    description:
+      'Motion Capture: Utilizing motion capture technology to track a person’s movements and replicate them in a graphical character, creating lifelike animations and seamless transitions.',
+  },
+ 
+  {
+    Id: 4,
+    name: 'Product Advertisement ',
+    video: coffee,
+    creators: ['Jay Gheewala', 'Adhiraj Singh Brar', 'Pratyush Parackal','Zoya Alam','Jasmeet Singh', 'Aryan Dongre', 'Vishal Bagada'],
+    linkedin: [
+      'https://www.linkedin.com/in/jay-gheewala-1b886728b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      'https://www.linkedin.com/in/adhiraj-brar-a32aa2289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      'https://www.linkedin.com/in/pratyush-parackal-4b7b77287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  'https://www.linkedin.com/in/zoya-alam-a02914297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+  'https://www.linkedin.com/in/jasmeet-singh-3b8b95282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+'https://www.linkedin.com/in/aryan-dongre-29b858313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+'https://www.linkedin.com/in/bagada-vishal-jayantilal-0444aa2a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    ],
+    description:
+      'Our team created a visually stunning advertisement of a coffee company, which includes a detailed process of coffee bean roasting . The quality of this project highlights our ability to deliver professional content that can elevate a brand`s appearance. ',
+  },
+
+  {
+    id: 5,
+    name: ' product add',
+    video: feni,
+    creators: ['Adeetya Uppal', 'Satwik Midya', 'Shriya Sinha','Siddharth Konnur'],
+    linkedin: [
+      'https://www.linkedin.com/in/adeetya-uppal-a552a1290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ',
+      'https://www.linkedin.com/in/satwik-midya-47b618270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+    ' https://www.linkedin.com/in/shriya-sinha-2022a2298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', 'https://www.linkedin.com/in/siddharth-konnur-21b0a128b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' 
+    ],
+    description:
+'Our project focuses on developing a visually engaging commercial for a Feni company by creating captivating visuals that highlight the product’s qualities.',
+  },
+  // You can add more objects here for additional sections
+];
+
+
+//https://videos.ctfassets.net/7ghyf81o1fuo/7ofTVOic40MbZPtJQK2PYH/9be2bb8388f7f9cb92dea24bbe46dd64/AboMotionCapture.mp4
+
+//https://videos.ctfassets.net/7ghyf81o1fuo/5VffwIYnDdFlToi9ILAVyh/ba4d0d75c9b3c68ecad9ac709369ff48/vfx.mp4
 
 const Satellite = () => {
   return (
     <>
-      {/* Featured Game Section */}
+      {/* Dynamic Sections for Graphics */}
       <div className="shadow-lg shadow-black m-0">
-      <section className="bg-black text-white py-12 border-b-2 border-white" id="satellite">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Text Section */}
-            <div className="space-y-4 p-4">
-              <p data-aos="fade-up" data-aos-delay="300" data-aos-once="true" className="text-pink-500 uppercase">
-                FEATURED NEW GAME
-              </p>
-              <h1 data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className="uppercase text-4xl md:text-5xl font-bold">
-                Soul Magician
-              </h1>
-              <p data-aos="fade-up" data-aos-delay="700" data-aos-once="true" className="text-base md:text-lg leading-relaxed">
-                In this 2D RPG map-clear game, players unlock unique powers and cast powerful spells to defeat enemies.
-                Navigate through dynamic levels, use strategic spellcasting, and shoot projectiles to clear waves of
-                enemies while upgrading abilities and discovering new powers along the way.
-              </p>
-              <button
-                data-aos="fade-up"
-                data-aos-delay="900"
-                data-aos-once="true"
-                className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
-              >
-                Play Game...
-              </button>
-            </div>
-            {/* Video Section */}
-            <div data-aos="zoom-in">
-              <video autoPlay loop muted className="w-full max-h-[350px] object-cover rounded-lg shadow-lg">
-                <source src={featuredGame} type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-      </section>
+        {graphics.map(({ id, name, video, creators, linkedin, description }) => (
+          <section
+            key={id}
+            className="bg-black text-white py-12 border-b-2 border-white"
+            id={`graphic-${id}`}
+          >
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                {/* Text Section */}
+                <div className="space-y-4 p-4">
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-once="true"
+                    className="text-pink-500 uppercase"
+                  >
+                    {name}
+                  </p>
+                  <h1
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-once="true"
+                    className="uppercase text-4xl md:text-5xl font-bold"
+                  >
+                    {name}
+                  </h1>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                    data-aos-once="true"
+                    className="text-base md:text-lg leading-relaxed"
+                  >
+                    {description}
+                  </p>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="900"
+                    data-aos-once="true"
+                    className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
+                  >
+                    {/* List of creators */}
+                  <div className="mt-4">
+                    <h3 className="text-lg font-bold">Creators</h3>
+                    <ul className="list-disc pl-6">
+                      {creators.map((creator, index) => (
+                        <li key={index}>
+                          <a
+                            href={linkedin[index]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-black-500 underline"
+                          >
+                            {creator}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  </div>
 
-      {/* Featured Animation Section */}
-      <section className="bg-black text-white py-12 border-b-2 border-white" id="satellite">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Text Section */}
-            <div className="space-y-4 p-4">
-              <p data-aos="fade-up" data-aos-delay="300" data-aos-once="true" className="text-pink-500 uppercase">
-                FEATURED ANIMATIONS
-              </p>
-              <h1 data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className="uppercase text-4xl md:text-5xl font-bold">
-                Product Advertisement
-              </h1>
-              <p data-aos="fade-up" data-aos-delay="700" data-aos-once="true" className="text-base md:text-lg leading-relaxed">
-                An engaging animated product advertisement that brings your brand to life with captivating visuals,
-                dynamic motion, and creative storytelling. Perfect for showcasing features, explaining concepts, and
-                grabbing attention with vibrant animations that leave a lasting impression.
-              </p>
-              <button
-                data-aos="fade-up"
-                data-aos-delay="900"
-                data-aos-once="true"
-                className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
-              >
-                Play Animations...
-              </button>
-            </div>
-            {/* Video Section */}
-            <div data-aos="zoom-in">
-              <video autoPlay loop muted className="w-full max-h-[350px] object-cover rounded-lg shadow-lg">
-                <source src={featuredAnimation} type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-      </section>
+                  
+                </div>
 
-      {/* Second Featured Animation Section */}
-      <section className="bg-black text-white py-12 border-b-2 border-white" id="satellite">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Text Section */}
-            <div className="space-y-4 p-4">
-              <p data-aos="fade-up" data-aos-delay="300" data-aos-once="true" className="text-pink-500 uppercase">
-                FEATURED ANIMATIONS
-              </p>
-              <h1 data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className="uppercase text-4xl md:text-5xl font-bold">
-                Product Advertisement
-              </h1>
-              <p data-aos-once="true" data-aos="fade-up" data-aos-delay="700" className="text-base md:text-lg leading-relaxed">
-                An engaging animated product advertisement that brings your brand to life with captivating visuals,
-                dynamic motion, and creative storytelling. Perfect for showcasing features, explaining concepts, and
-                grabbing attention with vibrant animations that leave a lasting impression.
-              </p>
-              <button
-                data-aos="fade-up"
-                data-aos-delay="900"
-                data-aos-once="true"
-                className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
-              >
-                Play Animations...
-              </button>
+                {/* Video Section */}
+                <div data-aos="zoom-in">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full max-h-[350px] object-cover rounded-lg shadow-lg"
+                  >
+                    <source src={video} type="video/mp4" />
+                  </video>
+                </div>
+              </div>
             </div>
-            {/* Video Section */}
-            <div data-aos="zoom-in">
-              <video autoPlay loop muted className="w-full max-h-[350px] object-cover rounded-lg shadow-lg">
-                <source src={featuredAnimation2} type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section className="bg-black text-white py-12 border-b-2 border-white" id="satellite">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Text Section */}
-            <div className="space-y-4 p-4">
-              <p data-aos="fade-up" data-aos-delay="300" data-aos-once="true" className="text-pink-500 uppercase">
-                FEATURED ANIMATIONS
-              </p>
-              <h1 data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className="uppercase text-4xl md:text-5xl font-bold">
-                Product Advertisement
-              </h1>
-              <p data-aos-once="true" data-aos="fade-up" data-aos-delay="700" className="text-base md:text-lg leading-relaxed">
-                An engaging animated product advertisement that brings your brand to life with captivating visuals,
-                dynamic motion, and creative storytelling. Perfect for showcasing features, explaining concepts, and
-                grabbing attention with vibrant animations that leave a lasting impression.
-              </p>
-              <button
-                data-aos="fade-up"
-                data-aos-delay="900"
-                data-aos-once="true"
-                className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
-              >
-                Play Animations...
-              </button>
-            </div>
-            {/* Video Section */}
-            <div data-aos="zoom-in">
-              <video autoPlay loop muted className="w-full max-h-[350px] object-cover rounded-lg shadow-lg">
-                <source src={featuredAnimation2} type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        ))}
       </div>
     </>
   );
 };
+
+
 
 

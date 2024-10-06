@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './fl.css'; // Custom CSS for flip effect
 
-const Flip = ({ title, image, description, details }) => {
+const Flip = ({ title, image, creator,description, linkdin ,playGame,video}) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -17,6 +17,7 @@ const Flip = ({ title, image, description, details }) => {
               alt={title}
               className="w-full h-48 object-cover rounded-t-lg"
             />
+
             <div className="p-4">
               <h3 className="text-lg font-semibold text-white">{title}</h3>
             </div>
@@ -45,8 +46,25 @@ const Flip = ({ title, image, description, details }) => {
                 </button>
               </div>
               <div className="mt-4">
-                <img src={image} alt={title} className="w-full h-48 object-cover rounded-lg mb-4" />
-                <p>{details}</p>
+              <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-48 object-cover rounded-t-lg"
+                    alt='Trailer not released '
+
+                  >
+                    <source src={video} type="video/mp4" />
+                  </video>
+                <p> Created by <a href= {linkdin} >{creator} </a> </p>
+                <br></br>
+                <p>{description}</p>
+                
+                <button
+                className="mt-4 w-full bg-pink-500 text-white py-2 px-4 rounded-lg"
+              >
+                  <a href={playGame}>PLAY GAME...</a>
+              </button>
               </div>
               <button
                 onClick={() => setShowModal(false)}

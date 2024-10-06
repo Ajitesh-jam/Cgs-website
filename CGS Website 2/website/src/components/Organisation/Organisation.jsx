@@ -357,7 +357,7 @@ const Organisation = () => {
                 data-aos="fade-up"
                 data-aos-delay="500"
                 data-aos-once="true"
-                onClick={() => handleNavigation("RND")}
+                onClick={() => handleNavigation("Research")}
                 className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-8 py-2 rounded-md hover:bg-pink-600 transition duration-300"
               >
                 EXPLORE MORE..
