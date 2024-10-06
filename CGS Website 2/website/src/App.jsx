@@ -14,6 +14,7 @@ import Graphics from "./components/Graphics/Graphics.jsx";
 import Team from "./components/Team/team.jsx";
 import Footer from "./components/Footer/Footer5.jsx";
 import Research from "./components/Research/Research.jsx";
+import cgsLogoWithoutBg from "./assets/cgsLogoWithoutBg.png"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -63,7 +64,7 @@ const App = () => {
           <Route path="/GameDev" element={<><Navbar/>  <GameDev />
              </>} />
            {/* Graphics Page Route */}
-                    <Route path="/Graphics" element={<><Navbar/>  <Graphics />
+                    <Route path="/Graphics" element={<> <Navbar/>  <Graphics />
              </>} />   
 
           <Route path="/Team" element={<><Navbar/><Team/>

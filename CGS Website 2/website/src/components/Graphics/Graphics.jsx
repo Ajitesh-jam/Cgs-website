@@ -10,6 +10,7 @@ import './graphics.css'; // Custom styles for the page
 
 
 const Graphics = () => {
+
   const [currentGame, setCurrentGame] = useState(0);
   const [selectedGame, setSelectedGame] = useState(null); // State to track selected game for popup
   const [isPopupVisible, setIsPopupVisible] = useState(false); // State to track popup visibility
@@ -22,7 +23,7 @@ const Graphics = () => {
     { id: 3, name: 'Ring', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7EVarOK7aHmPlv2Shk1h27/149659ec21e27e7d8e3394372d437b50/Ring.png'},
     { id: 4, name: 'waterfall', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3HhsghKkWV1om8lcGAu8Uh/d396aad63c1b840b42fe0b8d30c8b799/waterfall.png'},
     { id: 5, name: 'CGS Wall E', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3PAzxTXZV8mUQXCp7jCVkF/cb4e13eb59850c99ffcd637b879ad335/CGSwalle2.png'},
-    { id: 5, name: 'Beach', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7L7hxi7KrWvToNsFBlAfBz/2e11dff63114cd5aef73769cd907d8ab/adeetya.png'},
+    { id: 6, name: 'Beach', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7L7hxi7KrWvToNsFBlAfBz/2e11dff63114cd5aef73769cd907d8ab/adeetya.png'},
   ];
 
   
@@ -51,6 +52,8 @@ const Graphics = () => {
 
   return (
     <div className="graphics-page">
+
+  
       {/* Carousel Section */}
       <div className="carousel">
         <div
@@ -64,6 +67,16 @@ const Graphics = () => {
       </div>
 
       {/* Circular Cards Section */}
+
+      {/* <div
+      style={{
+        backgroundImage: `url('https://images.ctfassets.net/7ghyf81o1fuo/5cTMb9viFIajrFIuOmFH19/4a522f64a5627944305802861bbcc53c/Screenshot_2024-10-07_at_3.40.21_AM.png')`,
+        backgroundSize: 'cover', // This ensures the image covers the whole area
+        backgroundPosition: 'center',
+        height: '100vh', // Set the height of the div to cover the whole view
+        width: '100%',
+      }}
+    > */}
       <div className="cards-section">
         <h2 className="section-title">Explore Graphics</h2>
         <div className="cards-container">
@@ -89,6 +102,7 @@ const Graphics = () => {
           ))}
         </div>
       </div>
+      {/* </div> */}
 
 
 
@@ -239,7 +253,7 @@ const Satellite = () => {
                     <h3 className="text-lg font-bold">Creators</h3>
                     <ul className="list-disc pl-6">
                       {creators.map((creator, index) => (
-                        <li key={index}>
+                        <li >
                           <a
                             href={linkedin[index]}
                             target="_blank"
