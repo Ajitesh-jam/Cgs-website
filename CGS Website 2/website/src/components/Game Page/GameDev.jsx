@@ -215,7 +215,7 @@ const GameDev = () => {
   const [selectedGame, setSelectedGame] = useState(null);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
-  const carouselGames = [game1, game2, game3]; 
+  const carouselGames = ['https://images.ctfassets.net/7ghyf81o1fuo/6qW0Sjsv4lok77z8oOpKIo/a7a21f32fc337b3168cbaf1f03e7a1b2/parag.png', 'https://images.ctfassets.net/7ghyf81o1fuo/4pQ4TYJSKCV4xRYsRgSbs0/2d85e89f9e7b8592d3e783f3d3f2befc/shaurya.png', 'https://images.ctfassets.net/7ghyf81o1fuo/6RI1XPIY9thmmhbkycdzlJ/42318543a44f31a30e0463f6c03171f7/harswardhan.png','https://images.ctfassets.net/7ghyf81o1fuo/6gHMd7wcqO463x4AjYdFfl/2d4b2afcc9b59a6056d1e297de599cf1/harsh.png']; 
 
   const Game2D = [
     { id: 1, name: 'SOUL MAGICIAN', image: 'https://images.ctfassets.net/7ghyf81o1fuo/6qW0Sjsv4lok77z8oOpKIo/a7a21f32fc337b3168cbaf1f03e7a1b2/parag.png', creator: 'Parag Chimankar', linkedin: 'https://www.linkedin.com/in/chimankarparag/' ,play:'https://chimankarparag.itch.io/soul-magician' , description:'2D rpg map clear game', video:'https://videos.ctfassets.net/7ghyf81o1fuo/7IWziFm8MzfzeTVlVHtlVT/6ed2158411e48d0218577c4da4417057/parag.mp4'},

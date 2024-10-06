@@ -486,14 +486,14 @@ const Team = () => {
       name: "Vedanta Hazra",
       position: "RnD Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/49mRXSBJQUfLhFpgCdwF6J/d1f95e986710317b8eb9ba1954ea167b/vedant.jpeg",
-      socials: ["https://www.linkedin.com/in/vedanta-hazra-97859724b/", "mailto:vedanatahazra2004@gmail.com"]
+      socials: ["https://www.linkedin.com/in/vedanta-hazra-97859724b/", "mailto:vedantahazra2004@gmail.com"]
     },
     {
       id: 4,
       name: "Sahil Patel",
       position: "Rnd Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/47zqeuISSiapCaffmn9rp2/ccf07b72842afe0683da6cda46c5418b/Sahil.png",
-      socials: [ "https://www.linkedin.com/in/siddharth-singh-7b1b3b1b3/", "mailto:sahil9123patel@gmail.com"]},
+      socials: [ "https://www.linkedin.com/in/sahil-patel-21b30a255/", "mailto:sahil9123patel@gmail.com"]},
   
       {id: 5,
       name: "Upanshu Jain",
@@ -505,26 +505,26 @@ const Team = () => {
       name: "Yash Daga",
       position: "Graphics Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/2c9AJVY7P6YMiaCi0uIvTN/cf925b1314229a631b82971f758f1d9d/Screenshot_2024-10-01_at_2.29.02_AM.png",
-      socials: [ "https://www.linkedin.com/in/yash-daga-0b2041257/", "mailto:yash@gmail.com"]},
+      socials: [ "https://www.linkedin.com/in/yash-daga-0b2041257/", "mailto:daga.yashhh@gmail.com"]},
   
       {id: 7,
       name: "Krishna Paikine ",
       position: "Web Dev Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/2715Ccq5Jw00UMi26MzPxW/3cae4d0f911fe005361800c8f540198c/Krishna.png",
       socials: [ "http://www.linkedin.com/in/krishnapaikine/", "mailto:krishnapaikine777@gmail.com"]},
-  
+        
+      {id: 9,
+        name: "Shubhankar das",
+        position: "Game Dev Head",
+        image: "https://images.ctfassets.net/7ghyf81o1fuo/3579nliT4FowxSmj6CYWYj/8d78f5fccda6489e31afec49f6e60389/WhatsApp_Image_2024-10-01_at_02.31.30.jpeg",
+        socials: [ "https://www.linkedin.com/in/shubhankar-das-380267261", "mailto:rikidas5621@gmail.com"]},  
       {id: 8,
       name: "Sai Avinash Seemakurthi",
       position: "Web Dev Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/6DvuLC00ZiKozzjnzLSLJa/39e9249cb023c12d4881adecb72ebc75/Screenshot_2024-10-01_at_2.30.30_AM.png",
       socials: [ "https://www.linkedin.com/in/sai-avinash-seemakurthi-446195261", "mailto:"]},
 
-  
-      {id: 9,
-      name: "Shubhankar das",
-      position: "Game Dev Head",
-      image: "https://images.ctfassets.net/7ghyf81o1fuo/3579nliT4FowxSmj6CYWYj/8d78f5fccda6489e31afec49f6e60389/WhatsApp_Image_2024-10-01_at_02.31.30.jpeg",
-      socials: [ "https://www.linkedin.com/in/shubhankar-das-380267261", "mailto:rikidas5621@gmail.com"]}
+
 
   ];
 
@@ -870,7 +870,7 @@ const Team = () => {
           </div>
 
           {/* GameDev Section */}
-          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+          {/* <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
             Game Developers
           </h2>
           <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -894,10 +894,10 @@ const Team = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Graphics Section */}
-          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+          {/* <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
             Graphics Team
           </h2>
           <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -946,6 +946,7 @@ const Team = () => {
                 </div>
               </div>
             ))}
+<<<<<<< Updated upstream
           </div>
           <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
             Public Relations
@@ -998,6 +999,10 @@ const Team = () => {
             ))}
           </div>
         </div>
+=======
+          </div>*/}
+        </div> 
+
       </div>
     </>
   );

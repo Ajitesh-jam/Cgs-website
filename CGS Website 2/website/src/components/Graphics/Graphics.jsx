@@ -17,12 +17,15 @@ const Graphics = () => {
   const carouselGames = [game1, game2, game3];
 
   const games = [
-    { id: 1, name: 'Game 1', image: game1, creator: 'Ajitesh', linkedin: 'https://www.linkedin.com/in/ajitesh-jamulkar-2a5351260/' },
-    { id: 2, name: 'Game 2', image: game2, creator: 'Ajitesh', linkedin: 'https://www.linkedin.com/in/ajitesh-jamulkar-2a5351260/' },
-    { id: 3, name: 'Game 3', image: game3, creator: 'Ajitesh', linkedin: 'https://www.linkedin.com/in/ajitesh-jamulkar-2a5351260/' },
-    { id: 4, name: 'Game 4', image: game1, creator: 'Ajitesh', linkedin: 'https://www.linkedin.com/in/ajitesh-jamulkar-2a5351260/' },
-    { id: 5, name: 'Game 5', image: game2, creator: 'Ajitesh', linkedin: 'https://www.linkedin.com/in/ajitesh-jamulkar-2a5351260/' },
+    { id: 1, name: 'Game 1', image: 'https://images.ctfassets.net/7ghyf81o1fuo/5xZWORv1h2A1evfxfEAl01/82dcd7f841bba0574cdf0d090ab308fe/pratyush.png'},
+    { id: 2, name: 'Game 2', image: 'https://images.ctfassets.net/7ghyf81o1fuo/5ETNTaJRmLF8sKVCSusotq/5bf7d9df3f409ef1fbd8b59446f18a12/Whale.png'},
+    { id: 3, name: 'Game 3', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7EVarOK7aHmPlv2Shk1h27/149659ec21e27e7d8e3394372d437b50/Ring.png'},
+    { id: 4, name: 'Game 4', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3HhsghKkWV1om8lcGAu8Uh/d396aad63c1b840b42fe0b8d30c8b799/waterfall.png'},
+    { id: 5, name: 'Game 5', image: 'https://images.ctfassets.net/7ghyf81o1fuo/3PAzxTXZV8mUQXCp7jCVkF/cb4e13eb59850c99ffcd637b879ad335/CGSwalle2.png'},
+    { id: 5, name: 'Game 6', image: 'https://images.ctfassets.net/7ghyf81o1fuo/7L7hxi7KrWvToNsFBlAfBz/2e11dff63114cd5aef73769cd907d8ab/adeetya.png'},
   ];
+
+  
 
   useEffect(() => {
     AOS.init({
