@@ -61,7 +61,8 @@ const App = () => {
           />
 
           {/* GameDev Page Route */}
-          <Route path="/GameDev" element={<><Navbar/>  <GameDev />
+          <Route path="/GameDev" element={<><Navbar style={{ position: 'fixed' }} />
+          <GameDev />
              </>} />
            {/* Graphics Page Route */}
                     <Route path="/Graphics" element={<> <Navbar/>  <Graphics />

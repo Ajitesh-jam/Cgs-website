@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-black fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-3xl font-bold text-white">
           <a href="/" className="hover:text-pink-700"><img src={Earth} className="w-[2.5rem] aspect-square"/></a>

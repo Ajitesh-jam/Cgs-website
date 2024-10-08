@@ -491,7 +491,7 @@ const Team = () => {
     {
       id: 4,
       name: "Sahil Patel",
-      position: "Rnd Head",
+      position: "RnD Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/47zqeuISSiapCaffmn9rp2/ccf07b72842afe0683da6cda46c5418b/Sahil.png",
       socials: [ "https://www.linkedin.com/in/sahil-patel-21b30a255/", "mailto:sahil9123patel@gmail.com"]},
   
@@ -509,7 +509,7 @@ const Team = () => {
   
       {id: 7,
       name: "Krishna Paikine ",
-      position: "Web Dev Head",
+      position: "Content Creation Head",
       image: "https://images.ctfassets.net/7ghyf81o1fuo/2715Ccq5Jw00UMi26MzPxW/3cae4d0f911fe005361800c8f540198c/Krishna.png",
       socials: [ "http://www.linkedin.com/in/krishnapaikine/", "mailto:krishnapaikine777@gmail.com"]},
         
