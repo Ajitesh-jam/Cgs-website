@@ -46,8 +46,7 @@ const App = () => {
                   >
                     <source src={BgVideo} type="video/mp4" />
                   </video>
-                  <Navbar style={{ position: 'fixed' }} />
-
+                  <Navbar />
                   <Hero />
                 
                 <HeroCard />

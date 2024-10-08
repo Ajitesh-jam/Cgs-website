@@ -11,7 +11,7 @@ const Footer = () => {
     navigate(`/${name}`);
   };
   return (
-    <div className="bg-dark">
+    <div className="bg-dark ">
       <section className="max-w-[1400px] mx-auto text-white">
         <div className="grid md:grid-cols-3 py-5 m-2">
           {/* first column */}

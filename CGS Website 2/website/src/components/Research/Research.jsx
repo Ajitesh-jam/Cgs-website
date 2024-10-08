@@ -67,7 +67,7 @@ const Satellite = () => {
   return (
     <>
       <section className="bg-black text-white py-10 border-b-2 border-white" id="satellite">
-        <div className="container ">
+        <div className="container bg-black ">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <div className="space-y-3 xl:pr-36 p-4 rounded-2xl ">
               <p
