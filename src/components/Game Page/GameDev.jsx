@@ -251,7 +251,7 @@ const GameDev = () => {
     const handleHashChange = () => {
       const gameId = window.location.hash.replace('#', '');
       if (gameId) {
-        const selected = actionGames.find(game => game.id === parseInt(gameId));
+        const selected = Game2D.find(game => game.id === parseInt(gameId));
         if (selected) {
           setSelectedGame(selected);
           setIsPopupVisible(true);

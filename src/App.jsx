@@ -63,14 +63,16 @@ const App = () => {
           {/* GameDev Page Route */}
           <Route path="/GameDev" element={<><Navbar style={{ position: 'fixed' }} />
           <GameDev />
+          <Footer/>
+            
              </>} />
            {/* Graphics Page Route */}
-                    <Route path="/Graphics" element={<> <Navbar/>  <Graphics />
+                    <Route path="/Graphics" element={<> <Navbar/>  <Graphics /> <Footer/>
              </>} />   
 
-          <Route path="/Team" element={<><Navbar/><Team/>
+          <Route path="/Team" element={<><Navbar/><Team/> <Footer/>
               </>} />
-          <Route path='/Research' element={<><Navbar/><Research/></>}/>
+          <Route path='/Research' element={<><Navbar/><Research/> <Footer/> </>}/>
          </Routes>
        </div>
     </Router>

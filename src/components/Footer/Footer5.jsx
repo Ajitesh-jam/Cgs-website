@@ -34,9 +34,9 @@ const Footer = () => {
                   Important Links
                 </h1>
                 <ul className={`flex flex-col gap-3 `}>
-                  <li className="cursor-pointer"><a href='#2'>Home</a></li>
-                  <li className="cursor-pointer"><a href='' onClick={handleNavigation('GameDev')}>Game development</a></li>
-                  <li className="cursor-pointer"><a onClick={handleNavigation('Graphics')}>Graphics</a></li>
+                  <li className="cursor-pointer"><a href='/'>Home</a></li>
+                  <li className="cursor-pointer"><a href='/GameDev' >Game development</a></li>
+                  <li className="cursor-pointer"><a href='/Graphics'>Graphics</a></li>
                   <li className="cursor-pointer">Team</li>
                   <li className="cursor-pointer">Research</li>
                 </ul>
@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="hidden sm:block">
           <div className="flex justify-between items-center text-center py-6 border-t-2 border-gray-300/40 mx-auto">
             <span className="text-gray-400">
-              @Copyright Computer Graphics Society, IIT Kharagpur
+              @ Copyrights Computer Graphics Society, IIT Kharagpur
             </span>
           </div>
         </div>
