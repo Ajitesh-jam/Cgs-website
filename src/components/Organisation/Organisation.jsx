@@ -315,7 +315,7 @@ const Organisation = () => {
               />
             </div>
             <div className="space-y-6 p-6 bg-black/80 rounded-xl border-r-2 border-b-2 border-pink-500">
-              <h1 data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className="uppercase text-4xl md:text-5xl text-pink-500 font-bold">
+              <h1 data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className="uppercase text-4xl md:text-4xl text-pink-500 font-bold">
                 Graphics
               </h1>
               <p className="text-base md:text-lg" data-aos="fade-up" data-aos-once="true" data-aos-delay="700">
