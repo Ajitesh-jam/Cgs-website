@@ -50,7 +50,7 @@ const Flip = ({ title, image, creator,description, linkdin ,playGame,video}) => 
                     autoPlay
                     loop
                     muted
-                    className="w-full h-48 object-cover rounded-t-lg"
+                    className="w-full h-full object-cover rounded-t-lg"
                     alt='Trailer not released '
 
                   >
