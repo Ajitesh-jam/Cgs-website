@@ -118,8 +118,8 @@ export default Graphics;
 
 import musicVisual from "../../assets/Graphics/musicVisualize.mp4";
 
-import coffee from "../../assets/Graphics/coffee.mp4";
-import feni from "../../assets/Graphics/product.mp4";
+import coffee from "../../assets/animation.mp4";
+import feni from "../../assets/animation2.mp4";
 
 
 const graphics = [
