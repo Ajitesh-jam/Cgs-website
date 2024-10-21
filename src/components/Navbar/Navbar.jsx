@@ -48,6 +48,7 @@ function Navbar() {
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
+          <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Hackathon")}}>Hackathon</a>
         </div>
       </div>
 
@@ -58,6 +59,7 @@ function Navbar() {
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
+          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Hackathon")}}>Hackathon</a>
         </div>
       </div>
     </nav>
