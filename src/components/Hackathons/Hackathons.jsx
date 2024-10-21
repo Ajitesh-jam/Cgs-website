@@ -52,7 +52,7 @@ const Hackathons = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-6 p-6">
+      <div className="flex flex-col items-center justify-center gap-6 pt-3 pb-3">
       {hackathons.map((hackathon, index) => (
         <HackathonCard
           key={index}
