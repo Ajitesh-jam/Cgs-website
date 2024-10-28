@@ -62,40 +62,30 @@ const hackathons = [
 
 const Hackathons = () => {
   const [currentGame, setCurrentGame] = useState(0);
-  const carouselGames = [game1, game2, game3];
+  const carouselGames = [jit, vr11, vr12,vr22];
+  const interval = setInterval(() => {
+    setCurrentGame((prevGame) => (prevGame + 1) % carouselGames.length);
+  }, 3000);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white font-sans">
-      
-      {/* Hero Section */}
       <div className="relative w-full h-[60vh] overflow-hidden">
         <div
-          className="absolute top-0 left-0 w-full h-full bg-cover bg-center transition-all duration-500"
+          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${carouselGames[currentGame]})` }}
         >
           <div className="flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-lg text-center">
-              Hackathons
-            </h1>
+            <h1 className="text-5xl font-bold text-white drop-shadow-lg text-center">Hackathons</h1>
           </div>
         </div>
       </div>
 
-      {/* Carousel Controls */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
-        {carouselGames.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentGame(index)}
-            className={`w-4 h-4 rounded-full ${
-              index === currentGame ? 'bg-pink-500' : 'bg-gray-500'
-            }`}
-          ></button>
-        ))}
-      </div>
-
       {/* Hackathon Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 px-4 md:px-8 lg:px-16">
+      <div className="py-10">
+        <div className="container mx-auto px-4">
+          <h1 className="text-5xl text-pink-400 mb-8 text-center"  data-aos-once='true'data-aos="zoom-in">Our Achievements</h1>
+    </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 py-12 px-4 md:px-8 lg:px-16" data-aos-once='true'data-aos="zoom-in">
         {hackathons.map((hackathon, index) => (
           <HackathonCard
             key={index}
@@ -106,6 +96,7 @@ const Hackathons = () => {
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };
