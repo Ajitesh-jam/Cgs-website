@@ -45,7 +45,7 @@ function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-8 text-lg text-white">
           <a href="#" className="hover:text-pink-500 " onClick={()=>{handleNavigation("Team")}}>Team</a>
-          <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
+          <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Dev</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Hackathon")}}>Hackathon</a>
@@ -56,7 +56,7 @@ function Navbar() {
       <div className={`lg:hidden ${isOpen ? "block" : "hidden"} bg-black`}>
         <div className="space-y-4 py-2 px-4 text-white text-lg text-center">
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Team")}}>Team</a>
-          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Development</a>
+          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("GameDev")}}>Game Dev</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Hackathon")}}>Hackathon</a>
