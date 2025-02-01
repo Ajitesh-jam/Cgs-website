@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer5.jsx";
 import Research from "./components/Research/Research.jsx";
 import cgsLogoWithoutBg from "./assets/cgsLogoWithoutBg.png";
 import Hackathons from "./components/Hackathons/Hackathons.jsx";
+import ContentCreation from "./components/Content Creation/ContentCreation.jsx";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -75,6 +76,7 @@ const App = () => {
               </>} />
           <Route path='/Research' element={<><Navbar/><Research/> <Footer/> </>}/>
           <Route path='/Hackathon' element={<><Navbar/><Hackathons/> <Footer/> </>}/>
+          <Route path='/ContentCreation' element={<><Navbar/><ContentCreation/> <Footer/> </>} />
          </Routes>
        </div>
     </Router>

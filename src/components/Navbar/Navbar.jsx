@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black fixed w-full z-10">
+    <nav className="bg-black fixed w-full z-10 top-0">
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-3xl font-bold text-white">
           <a href="/" className="hover:text-pink-700"><img src={Earth} className="w-[2.5rem] aspect-square"/></a>
@@ -49,6 +49,7 @@ function Navbar() {
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
           <a href="#" className="hover:text-pink-500" onClick={()=>{handleNavigation("Hackathon")}}>Hackathon</a>
+          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("ContentCreation")}}>Content</a>
         </div>
       </div>
 
@@ -60,6 +61,7 @@ function Navbar() {
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Graphics")}}>Graphics</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Research")}}>Research</a>
           <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("Hackathon")}}>Hackathon</a>
+          <a href="#" className="block hover:text-pink-500" onClick={()=>{handleNavigation("ContentCreation")}}>Content</a>
         </div>
       </div>
     </nav>
