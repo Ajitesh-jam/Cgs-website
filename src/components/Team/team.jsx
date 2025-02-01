@@ -449,6 +449,7 @@ import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import { getContent } from '../contentful/ContentfulClient';
 import Teamcard from './Teamcard';
+import team2 from "./team2.json";
 
 const Team = () => {
   const [members, setMembers] = React.useState([]);
@@ -839,7 +840,7 @@ const Team = () => {
             </h1>
           </div>
         </div>
-      </div>
+       </div>
 
       {/* Team Members Section */}
       <div className="team-section py-16 bg-black">
@@ -1011,6 +1012,178 @@ const Team = () => {
         </div> 
 
       </div>
+
+
+      <div className="team-section py-16 bg-black">
+        <div className="container mx-auto">
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mb-10 text-pink-500">
+            Core Team Members
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {team2.map((member) => (
+              // <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+              //   <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+              //     <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+              //     <div className="team-content p-4">
+              //       <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+              //       <span className="post text-sm text-pink-500">{member.position}</span>
+              //       <ul className="social mt-4 flex justify-center space-x-4">
+              //         {member.socials.map((social, index) => (
+              //           <li key={index}>
+              //             <a href={social} target="_blank" rel="noreferrer">
+              //               <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+              //             </a>
+              //           </li>
+              //         ))}
+              //       </ul>
+              //     </div>
+              //   </div>
+              // </div>
+              <Teamcard key={member.id}
+              name={member.name}
+              position={member.position}
+              social={member.socialLinks[0]}
+              mail={member.socialLinks[3]}
+              image={member.image}/>
+            ))}
+          </div>
+
+          {/* GameDev Section */}
+          {/* <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Game Developers
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {gameDev.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div> */}
+
+          {/* Graphics Section */}
+          {/* <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Graphics Team
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {graphics.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Web Developers
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {webdev.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+<<<<<<< Updated upstream
+          </div>
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Public Relations
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {pr.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h2 className="headi text-center text-2xl md:text-4xl font-bold mt-16 mb-10 text-pink-500">
+            Content Creation
+          </h2>
+          <div className="members grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {cc.map((member) => (
+              <div className="team-card" key={member.id} data-aos="fade-up" data-aos-once='true'>
+                <div className="our-team bg-black rounded-lg overflow-hidden shadow-lg">
+                  <img src={member.image} alt={member.name} className="team-image rounded-t-lg" />
+                  <div className="team-content p-4">
+                    <h3 className="title text-lg font-semibold text-white">{member.name}</h3>
+                    <span className="post text-sm text-pink-500">{member.position}</span>
+                    <ul className="social mt-4 flex justify-center space-x-4">
+                      {member.socials.map((social, index) => (
+                        <li key={index}>
+                          <a href={social} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon icon={getSocialIcon(social)} className="text-pink-500 hover:text-white transition duration-300" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+=======
+          </div>*/}
+        </div> 
+
+      </div>
+
     </>
   );
 };

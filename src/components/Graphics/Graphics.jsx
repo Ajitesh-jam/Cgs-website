@@ -246,19 +246,19 @@ const Satellite = () => {
                     data-aos="fade-up"
                     data-aos-delay="900"
                     data-aos-once="true"
-                    className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition duration-300"
+                    className=" text-white  rounded-lg "
                   >
                     {/* List of creators */}
-                  <div className="mt-4">
-                    <h3 className="text-lg font-bold">Creators</h3>
-                    <ul className="list-disc pl-6">
+                    <div className="mt-4">
+                    <span className="text-lg font-bold">Creators</span>
+                    <ul className="list-disc">
                       {creators.map((creator, index) => (
-                        <li >
+                        <li key={index} className="inline-block mx-1 my-1.5">
                           <a
                             href={linkedin[index]}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-black-500 underline"
+                            className="bg-black border-2 border-pink-500 text-white px-2 py-1 rounded-full text-sm font-medium hover:bg-pink-500"
                           >
                             {creator}
                           </a>
@@ -266,6 +266,7 @@ const Satellite = () => {
                       ))}
                     </ul>
                   </div>
+
                   </div>
 
                   
