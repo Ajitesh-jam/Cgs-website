@@ -24,6 +24,7 @@ const Satellite = () => {
                 Navigate through dynamic levels, use strategic spellcasting, and shoot projectiles to clear waves of
                 enemies while upgrading abilities and discovering new powers along the way.
               </p>
+              
               <button
                 data-aos="fade-up"
                 data-aos-delay="900"
@@ -32,6 +33,7 @@ const Satellite = () => {
               >
                 Play Game...
               </button>
+              
             </div>
             {/* Video Section */}
             <div data-aos="zoom-in">
