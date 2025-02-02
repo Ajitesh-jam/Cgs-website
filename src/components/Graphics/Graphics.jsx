@@ -61,7 +61,7 @@ const Graphics = () => {
           style={{ backgroundImage: `url(${carouselGames[currentGame]})` }}
         >
           <div className="carousel-overlay">
-            <h1>Graphics Development</h1>
+            <h1>Graphic</h1>
           </div>
         </div>
       </div>
@@ -78,7 +78,6 @@ const Graphics = () => {
       }}
     > */}
       <div className="cards-section">
-        <h2 className="section-title">Explore Graphics</h2>
         <div className="cards-container">
           {games.map((game) => (
             <div
